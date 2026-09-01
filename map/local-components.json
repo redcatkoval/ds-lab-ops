@@ -1,0 +1,1192 @@
+{
+  "generated": "2026-08-28",
+  "source": "medusa-src/packages/admin/dashboard/src/components",
+  "consumer": "medusa-src/packages/admin/dashboard/src",
+  "method": "относительные импорты, привязка к ближайшей вышестоящей директории с index.ts",
+  "path_aliases": "в dashboard/tsconfig.json нет compilerOptions.paths; алиасов нет, все импорты относительные",
+  "totals": {
+    "component_dirs_total": 157,
+    "components_counted": 126,
+    "consumer_files_scanned": 1939,
+    "import_statements": 1482,
+    "components_with_zero_imports": 15,
+    "dynamic_imports_in_consumer": 224,
+    "imports_into_components_not_attributed": 10,
+    "name_overlap_with_ui": 1
+  },
+  "components": [
+    {
+      "name": "modals",
+      "basename": "modals",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals",
+      "imports": 270,
+      "files": 270,
+      "files_outside_own_dir": 268,
+      "reexports": 0
+    },
+    {
+      "name": "common/form",
+      "basename": "form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/form",
+      "imports": 123,
+      "files": 123,
+      "files_outside_own_dir": 123,
+      "reexports": 1
+    },
+    {
+      "name": "utilities/keybound-form",
+      "basename": "keybound-form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/keybound-form",
+      "imports": 119,
+      "files": 119,
+      "files_outside_own_dir": 119,
+      "reexports": 1
+    },
+    {
+      "name": "common/action-menu",
+      "basename": "action-menu",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/action-menu",
+      "imports": 103,
+      "files": 103,
+      "files_outside_own_dir": 103,
+      "reexports": 1
+    },
+    {
+      "name": "table/data-table",
+      "basename": "data-table",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table",
+      "imports": 84,
+      "files": 84,
+      "files_outside_own_dir": 78,
+      "reexports": 1
+    },
+    {
+      "name": "layout-composer",
+      "basename": "layout-composer",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout-composer",
+      "imports": 94,
+      "files": 80,
+      "files_outside_own_dir": 73,
+      "reexports": 7
+    },
+    {
+      "name": "data-grid",
+      "basename": "data-grid",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid",
+      "imports": 54,
+      "files": 49,
+      "files_outside_own_dir": 19,
+      "reexports": 1
+    },
+    {
+      "name": "common/skeleton",
+      "basename": "skeleton",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/skeleton",
+      "imports": 45,
+      "files": 45,
+      "files_outside_own_dir": 45,
+      "reexports": 1
+    },
+    {
+      "name": "table/configurable-data-table",
+      "basename": "configurable-data-table",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/configurable-data-table",
+      "imports": 35,
+      "files": 35,
+      "files_outside_own_dir": 34,
+      "reexports": 4
+    },
+    {
+      "name": "inputs/combobox",
+      "basename": "combobox",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox",
+      "imports": 34,
+      "files": 34,
+      "files_outside_own_dir": 33,
+      "reexports": 1
+    },
+    {
+      "name": "data-table",
+      "basename": "data-table",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-table",
+      "imports": 37,
+      "files": 30,
+      "files_outside_own_dir": 28,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/placeholder-cell",
+      "basename": "placeholder-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/placeholder-cell",
+      "imports": 30,
+      "files": 30,
+      "files_outside_own_dir": 30,
+      "reexports": 1
+    },
+    {
+      "name": "forms/metadata-form",
+      "basename": "metadata-form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form",
+      "imports": 21,
+      "files": 21,
+      "files_outside_own_dir": 21,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/text-cell",
+      "basename": "text-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/text-cell",
+      "imports": 21,
+      "files": 21,
+      "files_outside_own_dir": 21,
+      "reexports": 1
+    },
+    {
+      "name": "common/thumbnail",
+      "basename": "thumbnail",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/thumbnail",
+      "imports": 20,
+      "files": 20,
+      "files_outside_own_dir": 20,
+      "reexports": 1
+    },
+    {
+      "name": "data-grid/components",
+      "basename": "components",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid/components",
+      "imports": 21,
+      "files": 17,
+      "files_outside_own_dir": 7,
+      "reexports": 9
+    },
+    {
+      "name": "common/section",
+      "basename": "section",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/section",
+      "imports": 12,
+      "files": 12,
+      "files_outside_own_dir": 12,
+      "reexports": 1
+    },
+    {
+      "name": "common/switch-box",
+      "basename": "switch-box",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/switch-box",
+      "imports": 12,
+      "files": 12,
+      "files_outside_own_dir": 12,
+      "reexports": 1
+    },
+    {
+      "name": "data-grid/models",
+      "basename": "models",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid/models",
+      "imports": 12,
+      "files": 12,
+      "files_outside_own_dir": 12,
+      "reexports": 4
+    },
+    {
+      "name": "inputs/country-select",
+      "basename": "country-select",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/country-select",
+      "imports": 12,
+      "files": 12,
+      "files_outside_own_dir": 12,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/date-cell",
+      "basename": "date-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/date-cell",
+      "imports": 12,
+      "files": 12,
+      "files_outside_own_dir": 12,
+      "reexports": 1
+    },
+    {
+      "name": "common/empty-table-content",
+      "basename": "empty-table-content",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/empty-table-content",
+      "imports": 11,
+      "files": 11,
+      "files_outside_own_dir": 11,
+      "reexports": 1
+    },
+    {
+      "name": "common/list-summary",
+      "basename": "list-summary",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/list-summary",
+      "imports": 11,
+      "files": 11,
+      "files_outside_own_dir": 11,
+      "reexports": 1
+    },
+    {
+      "name": "data-grid/hooks",
+      "basename": "hooks",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid/hooks",
+      "imports": 11,
+      "files": 11,
+      "files_outside_own_dir": 11,
+      "reexports": 14
+    },
+    {
+      "name": "table/table-cells/common/status-cell",
+      "basename": "status-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/status-cell",
+      "imports": 10,
+      "files": 10,
+      "files_outside_own_dir": 10,
+      "reexports": 1
+    },
+    {
+      "name": "table/data-table/data-table-filter",
+      "basename": "data-table-filter",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter",
+      "imports": 21,
+      "files": 9,
+      "files_outside_own_dir": 4,
+      "reexports": 2
+    },
+    {
+      "name": "common/conditional-tooltip",
+      "basename": "conditional-tooltip",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/conditional-tooltip",
+      "imports": 8,
+      "files": 8,
+      "files_outside_own_dir": 8,
+      "reexports": 1
+    },
+    {
+      "name": "inputs/percentage-input",
+      "basename": "percentage-input",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/percentage-input",
+      "imports": 8,
+      "files": 8,
+      "files_outside_own_dir": 8,
+      "reexports": 1
+    },
+    {
+      "name": "modals/stacked-modal-provider",
+      "basename": "stacked-modal-provider",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/stacked-modal-provider",
+      "imports": 8,
+      "files": 8,
+      "files_outside_own_dir": 6,
+      "reexports": 3
+    },
+    {
+      "name": "table/table-cells/common/money-amount-cell",
+      "basename": "money-amount-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/money-amount-cell",
+      "imports": 8,
+      "files": 8,
+      "files_outside_own_dir": 8,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/product/product-cell",
+      "basename": "product-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/product/product-cell",
+      "imports": 8,
+      "files": 8,
+      "files_outside_own_dir": 8,
+      "reexports": 1
+    },
+    {
+      "name": "common/icon-avatar",
+      "basename": "icon-avatar",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/icon-avatar",
+      "imports": 7,
+      "files": 7,
+      "files_outside_own_dir": 7,
+      "reexports": 1
+    },
+    {
+      "name": "common/permission-guard",
+      "basename": "permission-guard",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/permission-guard",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 6,
+      "reexports": 1
+    },
+    {
+      "name": "common/sortable-tree",
+      "basename": "sortable-tree",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/sortable-tree",
+      "imports": 11,
+      "files": 6,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "data-grid/context",
+      "basename": "context",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid/context",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 5,
+      "reexports": 2
+    },
+    {
+      "name": "data-table/helpers/sales-channels",
+      "basename": "sales-channels",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-table/helpers/sales-channels",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 6,
+      "reexports": 4
+    },
+    {
+      "name": "layout/nav-item",
+      "basename": "nav-item",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 6,
+      "reexports": 1
+    },
+    {
+      "name": "utilities/i18n",
+      "basename": "i18n",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/i18n",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 6,
+      "reexports": 1
+    },
+    {
+      "name": "utilities/visually-hidden",
+      "basename": "visually-hidden",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/visually-hidden",
+      "imports": 6,
+      "files": 6,
+      "files_outside_own_dir": 6,
+      "reexports": 1
+    },
+    {
+      "name": "common/link-button",
+      "basename": "link-button",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/link-button",
+      "imports": 5,
+      "files": 5,
+      "files_outside_own_dir": 5,
+      "reexports": 1
+    },
+    {
+      "name": "modals/route-modal-provider",
+      "basename": "route-modal-provider",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/route-modal-provider",
+      "imports": 6,
+      "files": 5,
+      "files_outside_own_dir": 3,
+      "reexports": 3
+    },
+    {
+      "name": "common/json-view-section",
+      "basename": "json-view-section",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/json-view-section",
+      "imports": 4,
+      "files": 4,
+      "files_outside_own_dir": 4,
+      "reexports": 1
+    },
+    {
+      "name": "common/logo-box",
+      "basename": "logo-box",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/logo-box",
+      "imports": 4,
+      "files": 4,
+      "files_outside_own_dir": 4,
+      "reexports": 2
+    },
+    {
+      "name": "inputs/handle-input",
+      "basename": "handle-input",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/handle-input",
+      "imports": 4,
+      "files": 4,
+      "files_outside_own_dir": 4,
+      "reexports": 1
+    },
+    {
+      "name": "inputs/quantity-input",
+      "basename": "quantity-input",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/quantity-input",
+      "imports": 4,
+      "files": 4,
+      "files_outside_own_dir": 4,
+      "reexports": 1
+    },
+    {
+      "name": "modals/route-focus-modal",
+      "basename": "route-focus-modal",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/route-focus-modal",
+      "imports": 4,
+      "files": 4,
+      "files_outside_own_dir": 4,
+      "reexports": 2
+    },
+    {
+      "name": "search",
+      "basename": "search",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/search",
+      "imports": 6,
+      "files": 4,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/date-range-display",
+      "basename": "date-range-display",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "common/metadata-section",
+      "basename": "metadata-section",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/metadata-section",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "common/sortable-list",
+      "basename": "sortable-list",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/sortable-list",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "common/truncated-text",
+      "basename": "truncated-text",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/truncated-text",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "inputs/chip-input",
+      "basename": "chip-input",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "layout/pages",
+      "basename": "pages",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/pages",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 1,
+      "reexports": 0
+    },
+    {
+      "name": "table/data-table/data-table-order-by",
+      "basename": "data-table-order-by",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-order-by",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "table/save-view-dialog",
+      "basename": "save-view-dialog",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/save-view-dialog",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/display-id-cell",
+      "basename": "display-id-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/display-id-cell",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/total-cell",
+      "basename": "total-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/total-cell",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/sales-channel/description-cell",
+      "basename": "description-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/sales-channel/description-cell",
+      "imports": 3,
+      "files": 3,
+      "files_outside_own_dir": 3,
+      "reexports": 1
+    },
+    {
+      "name": "common/badge-list-summary",
+      "basename": "badge-list-summary",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/badge-list-summary",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/chip-group",
+      "basename": "chip-group",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/chip-group",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/display-id",
+      "basename": "display-id",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/display-id",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/file-preview",
+      "basename": "file-preview",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/file-preview",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/file-upload",
+      "basename": "file-upload",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/file-upload",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/infinite-list",
+      "basename": "infinite-list",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/infinite-list",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/progress-bar",
+      "basename": "progress-bar",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/progress-bar",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/required-permissions-section",
+      "basename": "required-permissions-section",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/required-permissions-section",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "common/user-link",
+      "basename": "user-link",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/user-link",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "data-grid/helpers",
+      "basename": "helpers",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/data-grid/helpers",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 1,
+      "reexports": 3
+    },
+    {
+      "name": "layout/settings-layout",
+      "basename": "settings-layout",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "layout/shell",
+      "basename": "shell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/shell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "layout/user-menu",
+      "basename": "user-menu",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "localization/localized-table-pagination",
+      "basename": "localized-table-pagination",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/localization/localized-table-pagination",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "modals/route-modal-form",
+      "basename": "route-modal-form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/route-modal-form",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "modals/stacked-drawer",
+      "basename": "stacked-drawer",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/stacked-drawer",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 2
+    },
+    {
+      "name": "modals/stacked-focus-modal",
+      "basename": "stacked-focus-modal",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/stacked-focus-modal",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 2
+    },
+    {
+      "name": "table/data-table/data-table-search",
+      "basename": "data-table-search",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-search",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/country-cell",
+      "basename": "country-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/country-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/customer-cell",
+      "basename": "customer-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/customer-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/fulfillment-status-cell",
+      "basename": "fulfillment-status-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/fulfillment-status-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/payment-status-cell",
+      "basename": "payment-status-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/payment-status-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/order/sales-channel-cell",
+      "basename": "sales-channel-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/order/sales-channel-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/product/collection-cell",
+      "basename": "collection-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/product/collection-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/product/product-status-cell",
+      "basename": "product-status-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/product/product-status-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/product/variant-cell",
+      "basename": "variant-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/product/variant-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/promotion/status-cell",
+      "basename": "status-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/promotion/status-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/region/countries-cell",
+      "basename": "countries-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/region/countries-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/region/payment-providers-cell",
+      "basename": "payment-providers-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/region/payment-providers-cell",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "utilities/error-boundary",
+      "basename": "error-boundary",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/error-boundary",
+      "imports": 2,
+      "files": 2,
+      "files_outside_own_dir": 2,
+      "reexports": 1
+    },
+    {
+      "name": "authentication/protected-route",
+      "basename": "protected-route",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/authentication/protected-route",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "authentication/route-permission-guard",
+      "basename": "route-permission-guard",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/authentication/route-permission-guard",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "common/customer-info",
+      "basename": "customer-info",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/customer-info",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "common/listicle",
+      "basename": "listicle",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/listicle",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "common/segmented-control",
+      "basename": "segmented-control",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/common/segmented-control",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "inputs/province-select",
+      "basename": "province-select",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/inputs/province-select",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "layout/main-layout",
+      "basename": "main-layout",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "layout/notifications",
+      "basename": "notifications",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/notifications",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "layout/public-layout",
+      "basename": "public-layout",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/public-layout",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/data-table/data-table-query",
+      "basename": "data-table-query",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-query",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/data-table/data-table-root",
+      "basename": "data-table-root",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-root",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/code-cell",
+      "basename": "code-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/code-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/created-at-cell",
+      "basename": "created-at-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/created-at-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/email-cell",
+      "basename": "email-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/email-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/common/name-cell",
+      "basename": "name-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/common/name-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/customer/first-seen-cell",
+      "basename": "first-seen-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/customer/first-seen-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/product/sales-channels-cell",
+      "basename": "sales-channels-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/product/sales-channels-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/region/region-cell",
+      "basename": "region-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/region/region-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/sales-channel/name-cell",
+      "basename": "name-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/sales-channel/name-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/taxes/type-cell",
+      "basename": "type-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/taxes/type-cell",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "table/view-selector",
+      "basename": "view-selector",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/view-selector",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 2
+    },
+    {
+      "name": "utilities/generic-forward-ref",
+      "basename": "generic-forward-ref",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/generic-forward-ref",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "utilities/hydrate-fallback",
+      "basename": "hydrate-fallback",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/utilities/hydrate-fallback",
+      "imports": 1,
+      "files": 1,
+      "files_outside_own_dir": 1,
+      "reexports": 1
+    },
+    {
+      "name": "filtering/filter-group",
+      "basename": "filter-group",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/filtering/filter-group",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "filtering/order-by",
+      "basename": "order-by",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/filtering/order-by",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "filtering/query",
+      "basename": "query",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/filtering/query",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "forms/address-form",
+      "basename": "address-form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/forms/address-form",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "forms/email-form",
+      "basename": "email-form",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/forms/email-form",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "layout/pages/single-column-page",
+      "basename": "single-column-page",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/pages/single-column-page",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 3
+    },
+    {
+      "name": "layout/pages/single-row",
+      "basename": "single-row",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/pages/single-row",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 2
+    },
+    {
+      "name": "layout/pages/two-column-page",
+      "basename": "two-column-page",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/layout/pages/two-column-page",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 3
+    },
+    {
+      "name": "modals/route-drawer",
+      "basename": "route-drawer",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/modals/route-drawer",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 2
+    },
+    {
+      "name": "table/save-view-dropdown",
+      "basename": "save-view-dropdown",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/save-view-dropdown",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/region/fulfillment-providers-cell",
+      "basename": "fulfillment-providers-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/region/fulfillment-providers-cell",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/shipping-option/admin-only-cell",
+      "basename": "admin-only-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/shipping-option/admin-only-cell",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/shipping-option/is-return-cell",
+      "basename": "is-return-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/shipping-option/is-return-cell",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/shipping-option/price-type-cell",
+      "basename": "price-type-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/shipping-option/price-type-cell",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    },
+    {
+      "name": "table/table-cells/shipping-option/shipping-option-cell",
+      "basename": "shipping-option-cell",
+      "source_path": "medusa-src/packages/admin/dashboard/src/components/table/table-cells/shipping-option/shipping-option-cell",
+      "imports": 0,
+      "files": 0,
+      "files_outside_own_dir": 0,
+      "reexports": 1
+    }
+  ],
+  "zero_imports": [
+    "filtering/filter-group",
+    "filtering/order-by",
+    "filtering/query",
+    "forms/address-form",
+    "forms/email-form",
+    "layout/pages/single-column-page",
+    "layout/pages/single-row",
+    "layout/pages/two-column-page",
+    "modals/route-drawer",
+    "table/save-view-dropdown",
+    "table/table-cells/region/fulfillment-providers-cell",
+    "table/table-cells/shipping-option/admin-only-cell",
+    "table/table-cells/shipping-option/is-return-cell",
+    "table/table-cells/shipping-option/price-type-cell",
+    "table/table-cells/shipping-option/shipping-option-cell"
+  ],
+  "overlap_with_medusajs_ui": [
+    {
+      "name": "skeleton",
+      "local_path": "medusa-src/packages/admin/dashboard/src/components/common/skeleton",
+      "system_path": "medusa-src/packages/design-system/ui/src/components/skeleton",
+      "local_files": 45,
+      "local_imports": 45,
+      "system_files": 0,
+      "system_imports": 0
+    }
+  ],
+  "overlap_method": {
+    "by_directory_name": 1,
+    "by_exported_symbol": 1,
+    "note": "оба способа дают один и тот же единственный случай: Skeleton"
+  },
+  "imports_into_dirs_without_index": {
+    "common/sidebar-link": 3,
+    "common/tax-badge": 2,
+    "table/table-cells/common/tiered-price-cell": 4,
+    "table/table-cells/customer/account-cell": 1
+  }
+}

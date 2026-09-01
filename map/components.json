@@ -1,0 +1,807 @@
+{
+  "generated": "2026-08-28",
+  "source": "medusa-src/packages/design-system/ui/src/components",
+  "consumer": "medusa-src/packages/admin/dashboard/src",
+  "symbol_map": "medusa-src/packages/design-system/ui/src/index.ts",
+  "totals": {
+    "component_dirs": 46,
+    "dirs_exported_from_index": 44,
+    "consumer_files_scanned": 1939,
+    "consumer_files_mentioning_ui": 565,
+    "import_statements": 566,
+    "components_with_zero_imports": 10
+  },
+  "components": [
+    {
+      "name": "heading",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/heading",
+      "exported_symbols": [
+        "Heading"
+      ],
+      "imports": 238,
+      "files": 238,
+      "per_symbol": {
+        "Heading": {
+          "imports": 238,
+          "files": 238
+        }
+      }
+    },
+    {
+      "name": "button",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/button",
+      "exported_symbols": [
+        "Button"
+      ],
+      "imports": 206,
+      "files": 206,
+      "per_symbol": {
+        "Button": {
+          "imports": 206,
+          "files": 206
+        }
+      }
+    },
+    {
+      "name": "text",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/text",
+      "exported_symbols": [
+        "Text"
+      ],
+      "imports": 176,
+      "files": 176,
+      "per_symbol": {
+        "Text": {
+          "imports": 176,
+          "files": 176
+        }
+      }
+    },
+    {
+      "name": "container",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/container",
+      "exported_symbols": [
+        "Container"
+      ],
+      "imports": 130,
+      "files": 130,
+      "per_symbol": {
+        "Container": {
+          "imports": 130,
+          "files": 130
+        }
+      }
+    },
+    {
+      "name": "input",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/input",
+      "exported_symbols": [
+        "Input"
+      ],
+      "imports": 104,
+      "files": 104,
+      "per_symbol": {
+        "Input": {
+          "imports": 104,
+          "files": 104
+        }
+      }
+    },
+    {
+      "name": "tooltip",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/tooltip",
+      "exported_symbols": [
+        "Tooltip",
+        "TooltipProvider"
+      ],
+      "imports": 69,
+      "files": 69,
+      "per_symbol": {
+        "Tooltip": {
+          "imports": 68,
+          "files": 68
+        },
+        "TooltipProvider": {
+          "imports": 1,
+          "files": 1
+        }
+      }
+    },
+    {
+      "name": "badge",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/badge",
+      "exported_symbols": [
+        "Badge"
+      ],
+      "imports": 49,
+      "files": 49,
+      "per_symbol": {
+        "Badge": {
+          "imports": 49,
+          "files": 49
+        }
+      }
+    },
+    {
+      "name": "checkbox",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/checkbox",
+      "exported_symbols": [
+        "Checkbox",
+        "CheckboxCheckedState"
+      ],
+      "imports": 44,
+      "files": 44,
+      "per_symbol": {
+        "Checkbox": {
+          "imports": 44,
+          "files": 44
+        },
+        "CheckboxCheckedState": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "icon-button",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/icon-button",
+      "exported_symbols": [
+        "IconButton"
+      ],
+      "imports": 42,
+      "files": 42,
+      "per_symbol": {
+        "IconButton": {
+          "imports": 42,
+          "files": 42
+        }
+      }
+    },
+    {
+      "name": "divider",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/divider",
+      "exported_symbols": [
+        "Divider"
+      ],
+      "imports": 23,
+      "files": 23,
+      "per_symbol": {
+        "Divider": {
+          "imports": 23,
+          "files": 23
+        }
+      }
+    },
+    {
+      "name": "status-badge",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/status-badge",
+      "exported_symbols": [
+        "StatusBadge"
+      ],
+      "imports": 23,
+      "files": 23,
+      "per_symbol": {
+        "StatusBadge": {
+          "imports": 23,
+          "files": 23
+        }
+      }
+    },
+    {
+      "name": "textarea",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/textarea",
+      "exported_symbols": [
+        "Textarea"
+      ],
+      "imports": 23,
+      "files": 23,
+      "per_symbol": {
+        "Textarea": {
+          "imports": 23,
+          "files": 23
+        }
+      }
+    },
+    {
+      "name": "hint",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/hint",
+      "exported_symbols": [
+        "Hint"
+      ],
+      "imports": 21,
+      "files": 21,
+      "per_symbol": {
+        "Hint": {
+          "imports": 21,
+          "files": 21
+        }
+      }
+    },
+    {
+      "name": "select",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/select",
+      "exported_symbols": [
+        "Select"
+      ],
+      "imports": 21,
+      "files": 21,
+      "per_symbol": {
+        "Select": {
+          "imports": 21,
+          "files": 21
+        }
+      }
+    },
+    {
+      "name": "switch",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/switch",
+      "exported_symbols": [
+        "Switch"
+      ],
+      "imports": 20,
+      "files": 20,
+      "per_symbol": {
+        "Switch": {
+          "imports": 20,
+          "files": 20
+        }
+      }
+    },
+    {
+      "name": "alert",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/alert",
+      "exported_symbols": [
+        "Alert"
+      ],
+      "imports": 16,
+      "files": 16,
+      "per_symbol": {
+        "Alert": {
+          "imports": 16,
+          "files": 16
+        }
+      }
+    },
+    {
+      "name": "dropdown-menu",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/dropdown-menu",
+      "exported_symbols": [
+        "DropdownMenu"
+      ],
+      "imports": 16,
+      "files": 16,
+      "per_symbol": {
+        "DropdownMenu": {
+          "imports": 16,
+          "files": 16
+        }
+      }
+    },
+    {
+      "name": "label",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/label",
+      "exported_symbols": [
+        "Label"
+      ],
+      "imports": 15,
+      "files": 15,
+      "per_symbol": {
+        "Label": {
+          "imports": 15,
+          "files": 15
+        }
+      }
+    },
+    {
+      "name": "currency-input",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/currency-input",
+      "exported_symbols": [
+        "CurrencyInput"
+      ],
+      "imports": 11,
+      "files": 11,
+      "per_symbol": {
+        "CurrencyInput": {
+          "imports": 11,
+          "files": 11
+        }
+      }
+    },
+    {
+      "name": "copy",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/copy",
+      "exported_symbols": [
+        "Copy"
+      ],
+      "imports": 10,
+      "files": 10,
+      "per_symbol": {
+        "Copy": {
+          "imports": 10,
+          "files": 10
+        }
+      }
+    },
+    {
+      "name": "radio-group",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/radio-group",
+      "exported_symbols": [
+        "RadioGroup"
+      ],
+      "imports": 10,
+      "files": 10,
+      "per_symbol": {
+        "RadioGroup": {
+          "imports": 10,
+          "files": 10
+        }
+      }
+    },
+    {
+      "name": "progress-tabs",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/progress-tabs",
+      "exported_symbols": [
+        "ProgressTabs"
+      ],
+      "imports": 9,
+      "files": 9,
+      "per_symbol": {
+        "ProgressTabs": {
+          "imports": 9,
+          "files": 9
+        }
+      }
+    },
+    {
+      "name": "command-bar",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/command-bar",
+      "exported_symbols": [
+        "CommandBar"
+      ],
+      "imports": 7,
+      "files": 7,
+      "per_symbol": {
+        "CommandBar": {
+          "imports": 7,
+          "files": 7
+        }
+      }
+    },
+    {
+      "name": "date-picker",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/date-picker",
+      "exported_symbols": [
+        "DatePicker"
+      ],
+      "imports": 6,
+      "files": 6,
+      "per_symbol": {
+        "DatePicker": {
+          "imports": 6,
+          "files": 6
+        }
+      }
+    },
+    {
+      "name": "inline-tip",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/inline-tip",
+      "exported_symbols": [
+        "InlineTip"
+      ],
+      "imports": 6,
+      "files": 6,
+      "per_symbol": {
+        "InlineTip": {
+          "imports": 6,
+          "files": 6
+        }
+      }
+    },
+    {
+      "name": "drawer",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/drawer",
+      "exported_symbols": [
+        "Drawer"
+      ],
+      "imports": 5,
+      "files": 5,
+      "per_symbol": {
+        "Drawer": {
+          "imports": 5,
+          "files": 5
+        }
+      }
+    },
+    {
+      "name": "kbd",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/kbd",
+      "exported_symbols": [
+        "Kbd"
+      ],
+      "imports": 5,
+      "files": 5,
+      "per_symbol": {
+        "Kbd": {
+          "imports": 5,
+          "files": 5
+        }
+      }
+    },
+    {
+      "name": "avatar",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/avatar",
+      "exported_symbols": [
+        "Avatar"
+      ],
+      "imports": 4,
+      "files": 4,
+      "per_symbol": {
+        "Avatar": {
+          "imports": 4,
+          "files": 4
+        }
+      }
+    },
+    {
+      "name": "focus-modal",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/focus-modal",
+      "exported_symbols": [
+        "FocusModal"
+      ],
+      "imports": 4,
+      "files": 4,
+      "per_symbol": {
+        "FocusModal": {
+          "imports": 4,
+          "files": 4
+        }
+      }
+    },
+    {
+      "name": "popover",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/popover",
+      "exported_symbols": [
+        "Popover"
+      ],
+      "imports": 4,
+      "files": 4,
+      "per_symbol": {
+        "Popover": {
+          "imports": 4,
+          "files": 4
+        }
+      }
+    },
+    {
+      "name": "prompt",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/prompt",
+      "exported_symbols": [
+        "Prompt"
+      ],
+      "imports": 4,
+      "files": 4,
+      "per_symbol": {
+        "Prompt": {
+          "imports": 4,
+          "files": 4
+        }
+      }
+    },
+    {
+      "name": "otp-input",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/otp-input",
+      "exported_symbols": [
+        "OtpInput",
+        "OtpInputProps"
+      ],
+      "imports": 3,
+      "files": 3,
+      "per_symbol": {
+        "OtpInput": {
+          "imports": 3,
+          "files": 3
+        },
+        "OtpInputProps": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "table",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/table",
+      "exported_symbols": [
+        "Table"
+      ],
+      "imports": 2,
+      "files": 2,
+      "per_symbol": {
+        "Table": {
+          "imports": 2,
+          "files": 2
+        }
+      }
+    },
+    {
+      "name": "code-block",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/code-block",
+      "exported_symbols": [
+        "CodeBlock"
+      ],
+      "imports": 1,
+      "files": 1,
+      "per_symbol": {
+        "CodeBlock": {
+          "imports": 1,
+          "files": 1
+        }
+      }
+    },
+    {
+      "name": "i18n-provider",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/i18n-provider",
+      "exported_symbols": [
+        "I18nProvider"
+      ],
+      "imports": 1,
+      "files": 1,
+      "per_symbol": {
+        "I18nProvider": {
+          "imports": 1,
+          "files": 1
+        }
+      }
+    },
+    {
+      "name": "toaster",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/toaster",
+      "exported_symbols": [
+        "Toaster"
+      ],
+      "imports": 1,
+      "files": 1,
+      "per_symbol": {
+        "Toaster": {
+          "imports": 1,
+          "files": 1
+        }
+      }
+    },
+    {
+      "name": "calendar",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/calendar",
+      "exported_symbols": [
+        "Calendar"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Calendar": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "code",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/code",
+      "exported_symbols": [
+        "Code"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Code": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "command",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/command",
+      "exported_symbols": [
+        "Command"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Command": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "date-segment",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/date-segment",
+      "exported_symbols": [],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {}
+    },
+    {
+      "name": "icon-badge",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/icon-badge",
+      "exported_symbols": [
+        "IconBadge"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "IconBadge": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "progress-accordion",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/progress-accordion",
+      "exported_symbols": [
+        "ProgressAccordion"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "ProgressAccordion": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "skeleton",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/skeleton",
+      "exported_symbols": [
+        "Skeleton"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Skeleton": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "tabs",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/tabs",
+      "exported_symbols": [
+        "Tabs"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Tabs": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    },
+    {
+      "name": "time-input",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/time-input",
+      "exported_symbols": [],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {}
+    },
+    {
+      "name": "toast",
+      "source_path": "medusa-src/packages/design-system/ui/src/components/toast",
+      "exported_symbols": [
+        "Toast"
+      ],
+      "imports": 0,
+      "files": 0,
+      "per_symbol": {
+        "Toast": {
+          "imports": 0,
+          "files": 0
+        }
+      }
+    }
+  ],
+  "zero_imports": [
+    "calendar",
+    "code",
+    "command",
+    "date-segment",
+    "icon-badge",
+    "progress-accordion",
+    "skeleton",
+    "tabs",
+    "time-input",
+    "toast"
+  ],
+  "no_public_export_from_index": [
+    "date-segment",
+    "time-input"
+  ],
+  "non_component_symbols_imported": {
+    "DataTable": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTableAction": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTableColumnAlignment": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTableColumnDef": {
+      "imports": 3,
+      "files": 3
+    },
+    "DataTableCommand": {
+      "imports": 9,
+      "files": 9
+    },
+    "DataTableEmptyStateProps": {
+      "imports": 3,
+      "files": 3
+    },
+    "DataTableFilter": {
+      "imports": 4,
+      "files": 4
+    },
+    "DataTableFilteringState": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTablePaginationState": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTableRow": {
+      "imports": 1,
+      "files": 1
+    },
+    "DataTableRowSelectionState": {
+      "imports": 8,
+      "files": 8
+    },
+    "DataTableSortingState": {
+      "imports": 1,
+      "files": 1
+    },
+    "ProgressStatus": {
+      "imports": 9,
+      "files": 9
+    },
+    "clx": {
+      "imports": 95,
+      "files": 95
+    },
+    "createDataTableColumnHelper": {
+      "imports": 27,
+      "files": 27
+    },
+    "createDataTableCommandHelper": {
+      "imports": 2,
+      "files": 2
+    },
+    "createDataTableFilterHelper": {
+      "imports": 7,
+      "files": 7
+    },
+    "toast": {
+      "imports": 199,
+      "files": 199
+    },
+    "useDataTable": {
+      "imports": 1,
+      "files": 1
+    },
+    "usePrompt": {
+      "imports": 85,
+      "files": 85
+    }
+  },
+  "star_imports": [],
+  "reexport_files": []
+}

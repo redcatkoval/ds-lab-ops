@@ -1,0 +1,3464 @@
+{
+  "generated": "2026-09-01",
+  "вопрос": "где используются половинные шаги отступов: 0.5, 1.5, 2.5",
+  "method": {
+    "источник_шага_1": "ds-ops/tokens/literals.json (записи type=отступ)",
+    "источник_шага_2": "собственный обход исходников по методу literals.json",
+    "file_types": [
+      ".ts",
+      ".tsx",
+      ".css"
+    ],
+    "where": "в .ts/.tsx ищем только внутри строковых литералов; в .css — по всему файлу",
+    "comments": "вырезаны до поиска",
+    "excluded": "классы дизайн-системы: любое совпадение, начинающееся с ui- или содержащее -ui-",
+    "dedup": "одинаковое значение одного типа на одной строке одного файла считается один раз",
+    "ступени": [
+      "0.5",
+      "1.5",
+      "2.5"
+    ],
+    "не_считались": [
+      "3.5 и прочие дробные ступени вне списка"
+    ],
+    "группы": {
+      "padding": "p, px, py, pt, pr, pb, pl, ps, pe",
+      "gap": "gap, gap-x, gap-y",
+      "margin": "m, mx, my, mt, mr, mb, ml, ms, me",
+      "space": "space-x, space-y"
+    },
+    "нумерация_строк": "line указан по исходному файлу; в literals.json строки нумеровались по файлу после вырезания комментариев, поэтому номера там меньше",
+    "калибровка": {
+      "сверка": "собственный обход прогнан по трём областям literals.json; совпадение по паре файл+значение полное",
+      "системный": {
+        "мой_обход": 215,
+        "literals_json": 215,
+        "расхождение": 0
+      },
+      "локальный": {
+        "мой_обход": 495,
+        "literals_json": 495,
+        "расхождение": 0
+      },
+      "срез_product_detail": {
+        "мой_обход": 32,
+        "literals_json": 32,
+        "расхождение": 0
+      }
+    }
+  },
+  "итого": {
+    "всего": 223,
+    "components": 101,
+    "routes_full": 122
+  },
+  "components": {
+    "область": [
+      "medusa-src/packages/design-system/ui/src/components/",
+      "medusa-src/packages/admin/dashboard/src/components/"
+    ],
+    "источник": "ds-ops/tokens/literals.json",
+    "всего": 101,
+    "файлов": 43,
+    "по_ступени": {
+      "0.5": 34,
+      "1.5": 48,
+      "2.5": 19
+    },
+    "по_группе": {
+      "padding": 77,
+      "gap": 24,
+      "margin": 0,
+      "space": 0
+    },
+    "по_утилите": {
+      "py": 48,
+      "gap-x": 12,
+      "gap-y": 10,
+      "p": 10,
+      "px": 8,
+      "pl": 4,
+      "pt": 3,
+      "gap": 2,
+      "ps": 2,
+      "pe": 1,
+      "pr": 1
+    },
+    "по_значению": {
+      "py-1.5": 32,
+      "gap-y-0.5": 10,
+      "py-2.5": 10,
+      "p-0.5": 8,
+      "gap-x-1.5": 6,
+      "py-0.5": 6,
+      "gap-x-0.5": 4,
+      "px-2.5": 4,
+      "px-1.5": 3,
+      "gap-1.5": 2,
+      "gap-x-2.5": 2,
+      "pl-0.5": 2,
+      "pl-1.5": 2,
+      "pt-0.5": 2,
+      "p-1.5": 1,
+      "p-2.5": 1,
+      "pe-2.5": 1,
+      "pr-1.5": 1,
+      "ps-0.5": 1,
+      "ps-1.5": 1,
+      "pt-2.5": 1,
+      "px-0.5": 1
+    },
+    "группы": {
+      "padding": {
+        "всего": 77,
+        "по_утилите": {
+          "py": 48,
+          "p": 10,
+          "px": 8,
+          "pl": 4,
+          "pt": 3,
+          "ps": 2,
+          "pe": 1,
+          "pr": 1
+        }
+      },
+      "gap": {
+        "всего": 24,
+        "по_утилите": {
+          "gap-x": 12,
+          "gap-y": 10,
+          "gap": 2
+        }
+      },
+      "margin": {
+        "всего": 0,
+        "по_утилите": {}
+      },
+      "space": {
+        "всего": 0,
+        "по_утилите": {}
+      }
+    },
+    "по_файлу": [
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "вхождений": 9
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "вхождений": 8
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "вхождений": 7
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "вхождений": 6
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+        "вхождений": 4
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+        "вхождений": 4
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+        "вхождений": 3
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+        "вхождений": 3
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+        "вхождений": 3
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+        "вхождений": 3
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display/date-range-display.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-skeleton.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-sidebar-layout-component.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu/user-menu.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/date-filter.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/string-filter.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/code-block/code-block.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/command-bar/command-bar.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker.stories.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/icon-button/icon-button.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/required-permissions-section/required-permissions-section.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/sortable-tree/tree-item.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-cell-container.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-duplicate-cell.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-readonly-cell.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-root.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/percentage-input/percentage-input.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/quantity-input/quantity-input.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-layout.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/shell/shell.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/search/search.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/data-table-filter.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/select-filter.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/calendar/_internal-calendar.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/calendar/calendar.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/command/command.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker-field.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/input/input.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/tabs/tabs.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/textarea/textarea.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/tooltip/tooltip.tsx",
+        "вхождений": 1
+      }
+    ],
+    "вхождения": [
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display/date-range-display.tsx",
+        "line": 24,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display/date-range-display.tsx",
+        "line": 41,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/required-permissions-section/required-permissions-section.tsx",
+        "line": 61,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/common/sortable-tree/tree-item.tsx",
+        "line": 70,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-cell-container.tsx",
+        "line": 33,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-duplicate-cell.tsx",
+        "line": 15,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-readonly-cell.tsx",
+        "line": 26,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-root.tsx",
+        "line": 738,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-skeleton.tsx",
+        "line": 33,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-skeleton.tsx",
+        "line": 51,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+        "line": 145,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+        "line": 150,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+        "line": 305,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+        "line": 126,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+        "line": 144,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+        "line": 144,
+        "utility": "pl",
+        "step": "1.5",
+        "value": "pl-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+        "line": 144,
+        "utility": "pr",
+        "step": "1.5",
+        "value": "pr-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 274,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 293,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 293,
+        "utility": "pl",
+        "step": "1.5",
+        "value": "pl-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 366,
+        "utility": "ps",
+        "step": "1.5",
+        "value": "ps-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 426,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 487,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 495,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+        "line": 516,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/percentage-input/percentage-input.tsx",
+        "line": 81,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/inputs/quantity-input/quantity-input.tsx",
+        "line": 61,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "line": 128,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "line": 129,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "line": 129,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "line": 143,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+        "line": 152,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+        "line": 116,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+        "line": 271,
+        "utility": "gap-x",
+        "step": "2.5",
+        "value": "gap-x-2.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+        "line": 364,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 52,
+        "utility": "pl",
+        "step": "0.5",
+        "value": "pl-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 52,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 202,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 214,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 400,
+        "utility": "pl",
+        "step": "0.5",
+        "value": "pl-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 400,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 412,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 412,
+        "utility": "pt",
+        "step": "0.5",
+        "value": "pt-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+        "line": 413,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-layout.tsx",
+        "line": 249,
+        "utility": "gap-x",
+        "step": "2.5",
+        "value": "gap-x-2.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-sidebar-layout-component.tsx",
+        "line": 34,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-sidebar-layout-component.tsx",
+        "line": 34,
+        "utility": "pt",
+        "step": "0.5",
+        "value": "pt-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/shell/shell.tsx",
+        "line": 211,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu/user-menu.tsx",
+        "line": 98,
+        "utility": "pe",
+        "step": "2.5",
+        "value": "pe-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu/user-menu.tsx",
+        "line": 114,
+        "utility": "ps",
+        "step": "0.5",
+        "value": "ps-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/search/search.tsx",
+        "line": 244,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/data-table-filter.tsx",
+        "line": 205,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/date-filter.tsx",
+        "line": 171,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/date-filter.tsx",
+        "line": 194,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 182,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 197,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 202,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 211,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 216,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 228,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+        "line": 233,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/select-filter.tsx",
+        "line": 174,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/string-filter.tsx",
+        "line": 106,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/string-filter.tsx",
+        "line": 111,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "line": 27,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "line": 45,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "line": 60,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "line": 65,
+        "utility": "px",
+        "step": "2.5",
+        "value": "px-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+        "line": 80,
+        "utility": "px",
+        "step": "2.5",
+        "value": "px-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 44,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 45,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 45,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 46,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 46,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+        "line": 47,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/calendar/_internal-calendar.tsx",
+        "line": 37,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/calendar/calendar.tsx",
+        "line": 84,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/code-block/code-block.tsx",
+        "line": 135,
+        "utility": "pt",
+        "step": "2.5",
+        "value": "pt-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/code-block/code-block.tsx",
+        "line": 164,
+        "utility": "px",
+        "step": "0.5",
+        "value": "px-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/command-bar/command-bar.tsx",
+        "line": 83,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/command-bar/command-bar.tsx",
+        "line": 194,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/command/command.tsx",
+        "line": 17,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker-field.tsx",
+        "line": 25,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker.stories.tsx",
+        "line": 36,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker.stories.tsx",
+        "line": 47,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+        "line": 49,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+        "line": 142,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+        "line": 163,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+        "line": 193,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/icon-button/icon-button.tsx",
+        "line": 33,
+        "utility": "p",
+        "step": "1.5",
+        "value": "p-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/icon-button/icon-button.tsx",
+        "line": 34,
+        "utility": "p",
+        "step": "2.5",
+        "value": "p-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/input/input.tsx",
+        "line": 23,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+        "line": 65,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+        "line": 76,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+        "line": 87,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+        "line": 77,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+        "line": 186,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+        "line": 206,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/tabs/tabs.tsx",
+        "line": 25,
+        "utility": "px",
+        "step": "2.5",
+        "value": "px-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/textarea/textarea.tsx",
+        "line": 18,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/design-system/ui/src/components/tooltip/tooltip.tsx",
+        "line": 99,
+        "utility": "px",
+        "step": "2.5",
+        "value": "px-2.5",
+        "group": "padding"
+      }
+    ],
+    "по_слою": {
+      "системный": 37,
+      "локальный": 64,
+      "экран": 0
+    },
+    "по_слою_детально": {
+      "системный": {
+        "всего": 37,
+        "файлов": 17,
+        "по_ступени": {
+          "0.5": 9,
+          "1.5": 19,
+          "2.5": 9
+        },
+        "по_группе": {
+          "padding": 27,
+          "gap": 10,
+          "margin": 0,
+          "space": 0
+        },
+        "по_утилите": {
+          "py": 15,
+          "px": 7,
+          "gap-x": 5,
+          "gap-y": 5,
+          "p": 4,
+          "pt": 1
+        },
+        "по_значению": {
+          "py-1.5": 12,
+          "gap-y-0.5": 5,
+          "gap-x-1.5": 4,
+          "px-2.5": 4,
+          "py-2.5": 3,
+          "p-0.5": 2,
+          "px-1.5": 2,
+          "gap-x-0.5": 1,
+          "p-1.5": 1,
+          "p-2.5": 1,
+          "pt-2.5": 1,
+          "px-0.5": 1
+        },
+        "группы": {
+          "padding": {
+            "всего": 27,
+            "по_утилите": {
+              "py": 15,
+              "px": 7,
+              "p": 4,
+              "pt": 1
+            }
+          },
+          "gap": {
+            "всего": 10,
+            "по_утилите": {
+              "gap-x": 5,
+              "gap-y": 5
+            }
+          },
+          "margin": {
+            "всего": 0,
+            "по_утилите": {}
+          },
+          "space": {
+            "всего": 0,
+            "по_утилите": {}
+          }
+        },
+        "по_файлу": [
+          {
+            "file": "button/button.tsx",
+            "вхождений": 6
+          },
+          {
+            "file": "badge/badge.tsx",
+            "вхождений": 5
+          },
+          {
+            "file": "dropdown-menu/dropdown-menu.tsx",
+            "вхождений": 4
+          },
+          {
+            "file": "radio-group/radio-group.stories.tsx",
+            "вхождений": 3
+          },
+          {
+            "file": "select/select.tsx",
+            "вхождений": 3
+          },
+          {
+            "file": "code-block/code-block.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "command-bar/command-bar.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "date-picker/date-picker.stories.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "icon-button/icon-button.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "calendar/_internal-calendar.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "calendar/calendar.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "command/command.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "date-picker/date-picker-field.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "input/input.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "tabs/tabs.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "textarea/textarea.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "tooltip/tooltip.tsx",
+            "вхождений": 1
+          }
+        ],
+        "вхождения": [
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+            "line": 27,
+            "utility": "gap-x",
+            "step": "0.5",
+            "value": "gap-x-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+            "line": 45,
+            "utility": "px",
+            "step": "1.5",
+            "value": "px-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+            "line": 60,
+            "utility": "px",
+            "step": "1.5",
+            "value": "px-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+            "line": 65,
+            "utility": "px",
+            "step": "2.5",
+            "value": "px-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/badge/badge.tsx",
+            "line": 80,
+            "utility": "px",
+            "step": "2.5",
+            "value": "px-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 44,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 45,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 45,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 46,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 46,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/button/button.tsx",
+            "line": 47,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/calendar/_internal-calendar.tsx",
+            "line": 37,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/calendar/calendar.tsx",
+            "line": 84,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/code-block/code-block.tsx",
+            "line": 135,
+            "utility": "pt",
+            "step": "2.5",
+            "value": "pt-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/code-block/code-block.tsx",
+            "line": 164,
+            "utility": "px",
+            "step": "0.5",
+            "value": "px-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/command-bar/command-bar.tsx",
+            "line": 83,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/command-bar/command-bar.tsx",
+            "line": 194,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/command/command.tsx",
+            "line": 17,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker-field.tsx",
+            "line": 25,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker.stories.tsx",
+            "line": 36,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/date-picker/date-picker.stories.tsx",
+            "line": 47,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+            "line": 49,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+            "line": 142,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+            "line": 163,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/dropdown-menu/dropdown-menu.tsx",
+            "line": 193,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/icon-button/icon-button.tsx",
+            "line": 33,
+            "utility": "p",
+            "step": "1.5",
+            "value": "p-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/icon-button/icon-button.tsx",
+            "line": 34,
+            "utility": "p",
+            "step": "2.5",
+            "value": "p-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/input/input.tsx",
+            "line": 23,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+            "line": 65,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+            "line": 76,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/radio-group/radio-group.stories.tsx",
+            "line": 87,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+            "line": 77,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+            "line": 186,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/select/select.tsx",
+            "line": 206,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/tabs/tabs.tsx",
+            "line": 25,
+            "utility": "px",
+            "step": "2.5",
+            "value": "px-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/textarea/textarea.tsx",
+            "line": 18,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/design-system/ui/src/components/tooltip/tooltip.tsx",
+            "line": 99,
+            "utility": "px",
+            "step": "2.5",
+            "value": "px-2.5",
+            "group": "padding"
+          }
+        ]
+      },
+      "локальный": {
+        "всего": 64,
+        "файлов": 26,
+        "по_ступени": {
+          "0.5": 25,
+          "1.5": 29,
+          "2.5": 10
+        },
+        "по_группе": {
+          "padding": 50,
+          "gap": 14,
+          "margin": 0,
+          "space": 0
+        },
+        "по_утилите": {
+          "py": 33,
+          "gap-x": 7,
+          "p": 6,
+          "gap-y": 5,
+          "pl": 4,
+          "gap": 2,
+          "ps": 2,
+          "pt": 2,
+          "pe": 1,
+          "pr": 1,
+          "px": 1
+        },
+        "по_значению": {
+          "py-1.5": 20,
+          "py-2.5": 7,
+          "p-0.5": 6,
+          "py-0.5": 6,
+          "gap-y-0.5": 5,
+          "gap-x-0.5": 3,
+          "gap-1.5": 2,
+          "gap-x-1.5": 2,
+          "gap-x-2.5": 2,
+          "pl-0.5": 2,
+          "pl-1.5": 2,
+          "pt-0.5": 2,
+          "pe-2.5": 1,
+          "pr-1.5": 1,
+          "ps-0.5": 1,
+          "ps-1.5": 1,
+          "px-1.5": 1
+        },
+        "группы": {
+          "padding": {
+            "всего": 50,
+            "по_утилите": {
+              "py": 33,
+              "p": 6,
+              "pl": 4,
+              "ps": 2,
+              "pt": 2,
+              "pe": 1,
+              "pr": 1,
+              "px": 1
+            }
+          },
+          "gap": {
+            "всего": 14,
+            "по_утилите": {
+              "gap-x": 7,
+              "gap-y": 5,
+              "gap": 2
+            }
+          },
+          "margin": {
+            "всего": 0,
+            "по_утилите": {}
+          },
+          "space": {
+            "всего": 0,
+            "по_утилите": {}
+          }
+        },
+        "по_файлу": [
+          {
+            "file": "layout/nav-item/nav-item.tsx",
+            "вхождений": 9
+          },
+          {
+            "file": "inputs/combobox/combobox.tsx",
+            "вхождений": 8
+          },
+          {
+            "file": "table/data-table/data-table-filter/number-filter.tsx",
+            "вхождений": 7
+          },
+          {
+            "file": "layout-composer/sortable-entry.tsx",
+            "вхождений": 5
+          },
+          {
+            "file": "inputs/chip-input/chip-input.tsx",
+            "вхождений": 4
+          },
+          {
+            "file": "forms/metadata-form/metadata-form.tsx",
+            "вхождений": 3
+          },
+          {
+            "file": "layout/main-layout/main-layout.tsx",
+            "вхождений": 3
+          },
+          {
+            "file": "common/date-range-display/date-range-display.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "data-grid/components/data-grid-skeleton.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "layout/settings-layout/settings-sidebar-layout-component.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "layout/user-menu/user-menu.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "table/data-table/data-table-filter/date-filter.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "table/data-table/data-table-filter/string-filter.tsx",
+            "вхождений": 2
+          },
+          {
+            "file": "common/required-permissions-section/required-permissions-section.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "common/sortable-tree/tree-item.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "data-grid/components/data-grid-cell-container.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "data-grid/components/data-grid-duplicate-cell.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "data-grid/components/data-grid-readonly-cell.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "data-grid/components/data-grid-root.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "inputs/percentage-input/percentage-input.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "inputs/quantity-input/quantity-input.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "layout/settings-layout/settings-layout.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "layout/shell/shell.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "search/search.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "table/data-table/data-table-filter/data-table-filter.tsx",
+            "вхождений": 1
+          },
+          {
+            "file": "table/data-table/data-table-filter/select-filter.tsx",
+            "вхождений": 1
+          }
+        ],
+        "вхождения": [
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display/date-range-display.tsx",
+            "line": 24,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/common/date-range-display/date-range-display.tsx",
+            "line": 41,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/common/required-permissions-section/required-permissions-section.tsx",
+            "line": 61,
+            "utility": "gap",
+            "step": "1.5",
+            "value": "gap-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/common/sortable-tree/tree-item.tsx",
+            "line": 70,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-cell-container.tsx",
+            "line": 33,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-duplicate-cell.tsx",
+            "line": 15,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-readonly-cell.tsx",
+            "line": 26,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-root.tsx",
+            "line": 738,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-skeleton.tsx",
+            "line": 33,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/data-grid/components/data-grid-skeleton.tsx",
+            "line": 51,
+            "utility": "py",
+            "step": "2.5",
+            "value": "py-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+            "line": 145,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+            "line": 150,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+            "line": 305,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+            "line": 126,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+            "line": 144,
+            "utility": "gap-x",
+            "step": "0.5",
+            "value": "gap-x-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+            "line": 144,
+            "utility": "pl",
+            "step": "1.5",
+            "value": "pl-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/chip-input/chip-input.tsx",
+            "line": 144,
+            "utility": "pr",
+            "step": "1.5",
+            "value": "pr-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 274,
+            "utility": "gap",
+            "step": "1.5",
+            "value": "gap-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 293,
+            "utility": "gap-x",
+            "step": "0.5",
+            "value": "gap-x-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 293,
+            "utility": "pl",
+            "step": "1.5",
+            "value": "pl-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 366,
+            "utility": "ps",
+            "step": "1.5",
+            "value": "ps-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 426,
+            "utility": "px",
+            "step": "1.5",
+            "value": "px-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 487,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 495,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/combobox/combobox.tsx",
+            "line": 516,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/percentage-input/percentage-input.tsx",
+            "line": 81,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/inputs/quantity-input/quantity-input.tsx",
+            "line": 61,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+            "line": 128,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+            "line": 129,
+            "utility": "gap-x",
+            "step": "0.5",
+            "value": "gap-x-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+            "line": 129,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+            "line": 143,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout-composer/sortable-entry.tsx",
+            "line": 152,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+            "line": 116,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+            "line": 271,
+            "utility": "gap-x",
+            "step": "2.5",
+            "value": "gap-x-2.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/main-layout/main-layout.tsx",
+            "line": 364,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 52,
+            "utility": "pl",
+            "step": "0.5",
+            "value": "pl-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 52,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 202,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 214,
+            "utility": "p",
+            "step": "0.5",
+            "value": "p-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 400,
+            "utility": "pl",
+            "step": "0.5",
+            "value": "pl-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 400,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 412,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 412,
+            "utility": "pt",
+            "step": "0.5",
+            "value": "pt-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/nav-item/nav-item.tsx",
+            "line": 413,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-layout.tsx",
+            "line": 249,
+            "utility": "gap-x",
+            "step": "2.5",
+            "value": "gap-x-2.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-sidebar-layout-component.tsx",
+            "line": 34,
+            "utility": "gap-y",
+            "step": "0.5",
+            "value": "gap-y-0.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/settings-layout/settings-sidebar-layout-component.tsx",
+            "line": 34,
+            "utility": "pt",
+            "step": "0.5",
+            "value": "pt-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/shell/shell.tsx",
+            "line": 211,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu/user-menu.tsx",
+            "line": 98,
+            "utility": "pe",
+            "step": "2.5",
+            "value": "pe-2.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/layout/user-menu/user-menu.tsx",
+            "line": 114,
+            "utility": "ps",
+            "step": "0.5",
+            "value": "ps-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/search/search.tsx",
+            "line": 244,
+            "utility": "gap-x",
+            "step": "1.5",
+            "value": "gap-x-1.5",
+            "group": "gap"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/data-table-filter.tsx",
+            "line": 205,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/date-filter.tsx",
+            "line": 171,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/date-filter.tsx",
+            "line": 194,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 182,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 197,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 202,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 211,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 216,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 228,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/number-filter.tsx",
+            "line": 233,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/select-filter.tsx",
+            "line": 174,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/string-filter.tsx",
+            "line": 106,
+            "utility": "py",
+            "step": "1.5",
+            "value": "py-1.5",
+            "group": "padding"
+          },
+          {
+            "file": "medusa-src/packages/admin/dashboard/src/components/table/data-table/data-table-filter/string-filter.tsx",
+            "line": 111,
+            "utility": "py",
+            "step": "0.5",
+            "value": "py-0.5",
+            "group": "padding"
+          }
+        ]
+      }
+    }
+  },
+  "routes_full": {
+    "область": "medusa-src/packages/admin/dashboard/src/routes/",
+    "просканировано_файлов": 1331,
+    "отступов_всего_в_области": 2033,
+    "дробных_ступеней_всего": 122,
+    "всего": 122,
+    "файлов": 33,
+    "по_ступени": {
+      "0.5": 19,
+      "1.5": 100,
+      "2.5": 3
+    },
+    "по_группе": {
+      "padding": 67,
+      "gap": 53,
+      "margin": 2,
+      "space": 0
+    },
+    "по_утилите": {
+      "py": 47,
+      "gap": 20,
+      "gap-x": 17,
+      "gap-y": 16,
+      "px": 14,
+      "p": 4,
+      "mr": 1,
+      "mt": 1,
+      "ps": 1,
+      "pt": 1
+    },
+    "по_значению": {
+      "py-1.5": 40,
+      "gap-1.5": 20,
+      "px-1.5": 14,
+      "gap-x-1.5": 11,
+      "gap-y-1.5": 10,
+      "gap-x-0.5": 6,
+      "gap-y-0.5": 6,
+      "py-0.5": 4,
+      "p-1.5": 3,
+      "py-2.5": 3,
+      "mr-0.5": 1,
+      "mt-0.5": 1,
+      "p-0.5": 1,
+      "ps-1.5": 1,
+      "pt-1.5": 1
+    },
+    "группы": {
+      "padding": {
+        "всего": 67,
+        "по_утилите": {
+          "py": 47,
+          "px": 14,
+          "p": 4,
+          "ps": 1,
+          "pt": 1
+        }
+      },
+      "gap": {
+        "всего": 53,
+        "по_утилите": {
+          "gap": 20,
+          "gap-x": 17,
+          "gap-y": 16
+        }
+      },
+      "margin": {
+        "всего": 2,
+        "по_утилите": {
+          "mr": 1,
+          "mt": 1
+        }
+      },
+      "space": {
+        "всего": 0,
+        "по_утилите": {}
+      }
+    },
+    "по_файлу": [
+      {
+        "file": "tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "вхождений": 16
+      },
+      {
+        "file": "price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "вхождений": 13
+      },
+      {
+        "file": "price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "вхождений": 13
+      },
+      {
+        "file": "tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "вхождений": 12
+      },
+      {
+        "file": "orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "products/common/components/category-combobox/category-combobox.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "вхождений": 5
+      },
+      {
+        "file": "categories/category-detail/components/category-organize-section/category-organize-section.tsx",
+        "вхождений": 4
+      },
+      {
+        "file": "inventory/inventory-detail/components/manage-locations/components/manage-locations-form.tsx",
+        "вхождений": 4
+      },
+      {
+        "file": "workflow-executions/workflow-execution-detail/components/workflow-execution-timeline-section/workflow-execution-timeline-section.tsx",
+        "вхождений": 3
+      },
+      {
+        "file": "inventory/inventory-detail/components/adjust-inventory/components/adjust-inventory-form.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "products/product-create/components/product-create-details-form/components/product-create-details-variant-section/product-create-details-variant-section.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "reservations/reservation-create/components/reservation-create-from/reservation-create-from.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "reservations/reservation-detail/components/edit-reservation/components/edit-reservation-form.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "tax-regions/common/components/tax-rate-line/tax-rate-line.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "translations/translation-list/components/translations-completion-section/translations-completion-section.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "workflow-executions/workflow-execution-detail/components/workflow-execution-history-section/workflow-execution-history-section.tsx",
+        "вхождений": 2
+      },
+      {
+        "file": "categories/common/components/category-tree/category-tree.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "locations/common/components/conditional-price-form/conditional-price-form.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "orders/order-detail/components/order-activity-section/order-note-form.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "orders/order-detail/components/order-general-section/order-general-section.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "price-lists/common/components/quantity-price-form/quantity-price-form.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "price-lists/price-list-detail/components/price-list-configuration-section/price-list-configuration-section.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "product-tags/product-tag-detail/components/product-tag-general-section/product-tag-general-section.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "promotions/common/edit-rules/components/rules-form-field/rules-form-field.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "promotions/promotion-detail/components/campaign-section/campaign-section.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "regions/region-create/components/create-region-form/create-region-form.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "tax-regions/common/components/target-item/target-item.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "translations/settings/components/entity-selector-tree/entity-selector-tree.tsx",
+        "вхождений": 1
+      },
+      {
+        "file": "workflow-executions/workflow-execution-detail/components/workflow-execution-general-section/workflow-execution-general-section.tsx",
+        "вхождений": 1
+      }
+    ],
+    "вхождения": [
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/categories/category-detail/components/category-organize-section/category-organize-section.tsx",
+        "line": 101,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/categories/category-detail/components/category-organize-section/category-organize-section.tsx",
+        "line": 133,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/categories/category-detail/components/category-organize-section/category-organize-section.tsx",
+        "line": 136,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/categories/category-detail/components/category-organize-section/category-organize-section.tsx",
+        "line": 161,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/categories/common/components/category-tree/category-tree.tsx",
+        "line": 53,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/adjust-inventory/components/adjust-inventory-form.tsx",
+        "line": 35,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/adjust-inventory/components/adjust-inventory-form.tsx",
+        "line": 38,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/manage-locations/components/manage-locations-form.tsx",
+        "line": 91,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/manage-locations/components/manage-locations-form.tsx",
+        "line": 94,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/manage-locations/components/manage-locations-form.tsx",
+        "line": 99,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/inventory/inventory-detail/components/manage-locations/components/manage-locations-form.tsx",
+        "line": 102,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/locations/common/components/conditional-price-form/conditional-price-form.tsx",
+        "line": 43,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-note-form.tsx",
+        "line": 72,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "line": 60,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "line": 85,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "line": 672,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "line": 758,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-activity-section/order-timeline.tsx",
+        "line": 1213,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
+        "line": 73,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/common/components/quantity-price-form/quantity-price-form.tsx",
+        "line": 52,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 204,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 204,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 210,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 210,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 211,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 216,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 220,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 220,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 225,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 262,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 264,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 264,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-configuration/components/price-list-configuration-form/price-list-configuration-form.tsx",
+        "line": 269,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 252,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 252,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 258,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 258,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 259,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 262,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 266,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 266,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 271,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 295,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 297,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 297,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-create/components/price-list-create-form/price-list-details-form.tsx",
+        "line": 302,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/price-lists/price-list-detail/components/price-list-configuration-section/price-list-configuration-section.tsx",
+        "line": 84,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-tags/product-tag-detail/components/product-tag-general-section/product-tag-general-section.tsx",
+        "line": 22,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "line": 112,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "line": 112,
+        "utility": "p",
+        "step": "1.5",
+        "value": "p-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "line": 114,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "line": 115,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/product-variants/product-variant-manage-inventory-items/components/manage-variant-inventory-items-form/manage-variant-inventory-items-form.tsx",
+        "line": 153,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/common/components/category-combobox/category-combobox.tsx",
+        "line": 280,
+        "utility": "ps",
+        "step": "1.5",
+        "value": "ps-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/common/components/category-combobox/category-combobox.tsx",
+        "line": 349,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/common/components/category-combobox/category-combobox.tsx",
+        "line": 389,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/common/components/category-combobox/category-combobox.tsx",
+        "line": 430,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/common/components/category-combobox/category-combobox.tsx",
+        "line": 438,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "line": 83,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "line": 83,
+        "utility": "p",
+        "step": "1.5",
+        "value": "p-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "line": 85,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "line": 86,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/components/create-product-variant-form/inventory-kit-tab.tsx",
+        "line": 127,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-details-form/components/product-create-details-variant-section/product-create-details-variant-section.tsx",
+        "line": 632,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-details-form/components/product-create-details-variant-section/product-create-details-variant-section.tsx",
+        "line": 665,
+        "utility": "py",
+        "step": "2.5",
+        "value": "py-2.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "line": 55,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "line": 55,
+        "utility": "p",
+        "step": "1.5",
+        "value": "p-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "line": 57,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "line": 58,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/components/product-create-inventory-kit-form/components/product-create-inventory-kit-section/product-create-inventory-kit-section.tsx",
+        "line": 95,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/promotions/common/edit-rules/components/rules-form-field/rules-form-field.tsx",
+        "line": 468,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/promotions/promotion-detail/components/campaign-section/campaign-section.tsx",
+        "line": 18,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/regions/region-create/components/create-region-form/create-region-form.tsx",
+        "line": 512,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/reservations/reservation-create/components/reservation-create-from/reservation-create-from.tsx",
+        "line": 40,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/reservations/reservation-create/components/reservation-create-from/reservation-create-from.tsx",
+        "line": 43,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/reservations/reservation-detail/components/edit-reservation/components/edit-reservation-form.tsx",
+        "line": 38,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/reservations/reservation-detail/components/edit-reservation/components/edit-reservation-form.tsx",
+        "line": 41,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/target-item/target-item.tsx",
+        "line": 29,
+        "utility": "py",
+        "step": "0.5",
+        "value": "py-0.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "line": 66,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "line": 71,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "line": 126,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "line": 139,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-override-card/tax-override-card.tsx",
+        "line": 175,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-rate-line/tax-rate-line.tsx",
+        "line": 22,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/common/components/tax-rate-line/tax-rate-line.tsx",
+        "line": 27,
+        "utility": "gap-x",
+        "step": "1.5",
+        "value": "gap-x-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 542,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 542,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 548,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 548,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 572,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 576,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 582,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 582,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 587,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 630,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 632,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-create/components/tax-region-override-create-form/tax-region-tax-override-create.tsx",
+        "line": 632,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 509,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 509,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 515,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 515,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 539,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 543,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 547,
+        "utility": "gap",
+        "step": "1.5",
+        "value": "gap-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 547,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 552,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 593,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 595,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 595,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 612,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 612,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 614,
+        "utility": "gap-y",
+        "step": "1.5",
+        "value": "gap-y-1.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/tax-regions/tax-region-tax-override-edit/components/tax-region-tax-override-edit-form/tax-region-tax-override-edit-form.tsx",
+        "line": 614,
+        "utility": "px",
+        "step": "1.5",
+        "value": "px-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/translations/settings/components/entity-selector-tree/entity-selector-tree.tsx",
+        "line": 41,
+        "utility": "py",
+        "step": "1.5",
+        "value": "py-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/translations/translation-list/components/translations-completion-section/translations-completion-section.tsx",
+        "line": 95,
+        "utility": "mr",
+        "step": "0.5",
+        "value": "mr-0.5",
+        "group": "margin"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/translations/translation-list/components/translations-completion-section/translations-completion-section.tsx",
+        "line": 234,
+        "utility": "mt",
+        "step": "0.5",
+        "value": "mt-0.5",
+        "group": "margin"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-general-section/workflow-execution-general-section.tsx",
+        "line": 36,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-history-section/workflow-execution-history-section.tsx",
+        "line": 59,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-history-section/workflow-execution-history-section.tsx",
+        "line": 123,
+        "utility": "gap-y",
+        "step": "0.5",
+        "value": "gap-y-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-timeline-section/workflow-execution-timeline-section.tsx",
+        "line": 359,
+        "utility": "pt",
+        "step": "1.5",
+        "value": "pt-1.5",
+        "group": "padding"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-timeline-section/workflow-execution-timeline-section.tsx",
+        "line": 408,
+        "utility": "gap-x",
+        "step": "0.5",
+        "value": "gap-x-0.5",
+        "group": "gap"
+      },
+      {
+        "file": "medusa-src/packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-timeline-section/workflow-execution-timeline-section.tsx",
+        "line": 408,
+        "utility": "p",
+        "step": "0.5",
+        "value": "p-0.5",
+        "group": "padding"
+      }
+    ]
+  },
+  "граница_замера": {
+    "срез_в_literals_json": "medusa-src/packages/admin/dashboard/src/routes/products/product-detail",
+    "половинных_в_срезе": 0,
+    "половинных_во_всём_routes": 122,
+    "не_видел_срез": 122,
+    "доля_области_по_файлам": {
+      "файлов_в_срезе_с_отступами": 8,
+      "файлов_в_routes_с_отступами": 330
+    }
+  }
+}

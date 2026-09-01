@@ -1,0 +1,46 @@
+{
+  "component": "ActionMenu",
+  "contract": {
+    "path": "contracts/action-menu.md",
+    "expected_status": "reviewed"
+  },
+  "rules": [
+    {
+      "id": "action-menu/min-actions",
+      "section": "4.1",
+      "check": "min-actions",
+      "jsx": "ActionMenu",
+      "props_read": [
+        "actions",
+        "groups"
+      ],
+      "min": 2,
+      "checked_by": "проверяется линтером",
+      "message": "действий должно быть два или больше; при одном нужна иконочная или текстовая кнопка",
+      "counting": "считаются элементы плоского списка actions; пока API не переведён, действия суммируются по всем группам groups. Действия из условного спреда считаются присутствующими.",
+      "anchor": "**Решение.** Действий два или больше. Ноль и одно запрещены. **[проверяется линтером]**"
+    },
+    {
+      "id": "action-menu/no-trigger-variant",
+      "section": "4.5",
+      "check": "prop-forbidden",
+      "jsx": "ActionMenu",
+      "prop": "variant",
+      "checked_by": "проверяется линтером",
+      "message": "проп variant у ActionMenu не используется: триггер без рамки",
+      "anchor": "**Решение.** Триггер без рамки. **[проверяется линтером]**"
+    }
+  ],
+  "scan": {
+    "root": "../medusa-src/packages/admin/dashboard/src",
+    "extensions": [
+      ".tsx"
+    ],
+    "exclude_dirs": [
+      "node_modules"
+    ],
+    "exclude_paths": [
+      "components/common/action-menu"
+    ]
+  }
+}

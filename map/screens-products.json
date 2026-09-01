@@ -1,0 +1,977 @@
+{
+  "generated": "2026-08-28",
+  "source": "medusa-src/packages/admin/dashboard/src/routes/products",
+  "unit": "экран — модуль, который index.ts раздела экспортирует как Component",
+  "method": {
+    "direct": "импорты самого файла экрана",
+    "transitive": "обход по модулям внутри routes/products/, начиная с файла экрана; проходит и через ре-экспорты бочек, и между директориями раздела — например в products/common/components/",
+    "boundary": "обход останавливается на dashboard/src/components (компонент засчитывается, внутрь не идём) и на других разделах routes/",
+    "notes": "комментарии вырезаны; учитываются import и import()"
+  },
+  "totals": {
+    "screens": 17,
+    "direct": {
+      "distinct_ui": 3,
+      "distinct_local": 7
+    },
+    "transitive": {
+      "distinct_ui": 20,
+      "distinct_local": 27
+    }
+  },
+  "union": {
+    "direct": {
+      "ui_components": [
+        "button",
+        "heading",
+        "text"
+      ],
+      "local_components": [
+        "common/file-preview",
+        "common/progress-bar",
+        "common/skeleton",
+        "data-grid/components",
+        "forms/metadata-form",
+        "layout-composer",
+        "modals"
+      ]
+    },
+    "transitive": {
+      "ui_components": [
+        "alert",
+        "badge",
+        "button",
+        "checkbox",
+        "command-bar",
+        "container",
+        "divider",
+        "heading",
+        "hint",
+        "icon-button",
+        "inline-tip",
+        "input",
+        "label",
+        "progress-tabs",
+        "select",
+        "status-badge",
+        "switch",
+        "text",
+        "textarea",
+        "tooltip"
+      ],
+      "local_components": [
+        "common/action-menu",
+        "common/chip-group",
+        "common/file-preview",
+        "common/file-upload",
+        "common/form",
+        "common/progress-bar",
+        "common/section",
+        "common/skeleton",
+        "common/sortable-list",
+        "common/switch-box",
+        "common/thumbnail",
+        "data-grid",
+        "data-grid/components",
+        "data-table",
+        "data-table/helpers/sales-channels",
+        "forms/metadata-form",
+        "inputs/chip-input",
+        "inputs/combobox",
+        "inputs/country-select",
+        "inputs/handle-input",
+        "layout-composer",
+        "modals",
+        "table/configurable-data-table",
+        "table/data-table",
+        "table/data-table/data-table-filter",
+        "utilities/i18n",
+        "utilities/keybound-form"
+      ]
+    }
+  },
+  "screens": [
+    {
+      "route": "product-create",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create/product-create.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 29,
+        "ui_components": [
+          "alert",
+          "button",
+          "checkbox",
+          "divider",
+          "heading",
+          "hint",
+          "icon-button",
+          "inline-tip",
+          "input",
+          "label",
+          "progress-tabs",
+          "text",
+          "textarea"
+        ],
+        "ui_symbols": [
+          "Alert",
+          "Button",
+          "Checkbox",
+          "Divider",
+          "Heading",
+          "Hint",
+          "IconButton",
+          "InlineTip",
+          "Input",
+          "Label",
+          "ProgressTabs",
+          "Text",
+          "Textarea"
+        ],
+        "ui_non_component_symbols": [
+          "DataTableRowSelectionState",
+          "ProgressStatus",
+          "clx",
+          "createDataTableColumnHelper",
+          "toast"
+        ],
+        "local_components": [
+          "common/action-menu",
+          "common/chip-group",
+          "common/file-upload",
+          "common/form",
+          "common/skeleton",
+          "common/sortable-list",
+          "common/switch-box",
+          "data-grid",
+          "data-table",
+          "data-table/helpers/sales-channels",
+          "inputs/chip-input",
+          "inputs/combobox",
+          "inputs/handle-input",
+          "modals",
+          "utilities/i18n",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 13,
+          "local": 16,
+          "sum": 29
+        }
+      }
+    },
+    {
+      "route": "product-detail",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-detail/product-detail.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "common/skeleton",
+          "layout-composer"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 2,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 20,
+        "ui_components": [
+          "badge",
+          "button",
+          "checkbox",
+          "command-bar",
+          "container",
+          "heading",
+          "status-badge",
+          "text",
+          "tooltip"
+        ],
+        "ui_symbols": [
+          "Badge",
+          "Button",
+          "Checkbox",
+          "CommandBar",
+          "Container",
+          "Heading",
+          "StatusBadge",
+          "Text",
+          "Tooltip"
+        ],
+        "ui_non_component_symbols": [
+          "DataTableAction",
+          "clx",
+          "createDataTableColumnHelper",
+          "createDataTableCommandHelper",
+          "createDataTableFilterHelper",
+          "toast",
+          "usePrompt"
+        ],
+        "local_components": [
+          "common/action-menu",
+          "common/section",
+          "common/skeleton",
+          "common/thumbnail",
+          "data-table",
+          "layout-composer"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 9,
+          "local": 6,
+          "sum": 15
+        }
+      }
+    },
+    {
+      "route": "product-create-variant",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-create-variant/product-create-variant.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 7,
+        "ui_components": [
+          "button",
+          "heading",
+          "icon-button",
+          "input",
+          "label",
+          "progress-tabs",
+          "switch"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "IconButton",
+          "Input",
+          "Label",
+          "ProgressTabs",
+          "Switch"
+        ],
+        "ui_non_component_symbols": [
+          "ProgressStatus",
+          "toast"
+        ],
+        "local_components": [
+          "common/form",
+          "data-grid",
+          "inputs/combobox",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 7,
+          "local": 5,
+          "sum": 12
+        }
+      }
+    },
+    {
+      "route": "product-media",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-media/product-media.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 13,
+        "ui_components": [
+          "button",
+          "checkbox",
+          "command-bar",
+          "icon-button",
+          "text",
+          "tooltip"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Checkbox",
+          "CommandBar",
+          "IconButton",
+          "Text",
+          "Tooltip"
+        ],
+        "ui_non_component_symbols": [
+          "clx",
+          "toast",
+          "usePrompt"
+        ],
+        "local_components": [
+          "common/file-upload",
+          "common/form",
+          "modals",
+          "utilities/i18n",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 6,
+          "local": 5,
+          "sum": 11
+        }
+      }
+    },
+    {
+      "route": "product-edit",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-edit/product-edit.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 3,
+        "ui_components": [
+          "button",
+          "heading",
+          "input",
+          "select",
+          "text",
+          "textarea"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "Input",
+          "Select",
+          "Text",
+          "Textarea"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "common/form",
+          "common/switch-box",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 6,
+          "local": 4,
+          "sum": 10
+        }
+      }
+    },
+    {
+      "route": "product-stock",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-stock/product-stock.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "common/progress-bar",
+          "common/skeleton",
+          "data-grid/components",
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 4,
+          "sum": 4
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 8,
+        "ui_components": [
+          "button",
+          "switch",
+          "tooltip"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Switch",
+          "Tooltip"
+        ],
+        "ui_non_component_symbols": [
+          "toast",
+          "usePrompt"
+        ],
+        "local_components": [
+          "common/progress-bar",
+          "common/skeleton",
+          "common/thumbnail",
+          "data-grid",
+          "data-grid/components",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 3,
+          "local": 7,
+          "sum": 10
+        }
+      }
+    },
+    {
+      "route": "product-options-manage",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-options-manage/product-options-manage.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 4,
+        "ui_components": [
+          "button",
+          "heading",
+          "hint",
+          "label",
+          "tooltip"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "Hint",
+          "Label",
+          "Tooltip"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "common/form",
+          "inputs/combobox",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 5,
+          "local": 4,
+          "sum": 9
+        }
+      }
+    },
+    {
+      "route": "product-organization",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-organization/product-organization.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 5,
+        "ui_components": [
+          "button",
+          "divider",
+          "heading",
+          "text"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Divider",
+          "Heading",
+          "Text"
+        ],
+        "ui_non_component_symbols": [
+          "clx",
+          "toast"
+        ],
+        "local_components": [
+          "common/form",
+          "common/skeleton",
+          "inputs/combobox",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 4,
+          "local": 5,
+          "sum": 9
+        }
+      }
+    },
+    {
+      "route": "product-import",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-import/product-import.tsx",
+      "direct": {
+        "ui_components": [
+          "button",
+          "heading",
+          "text"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "Text"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "common/file-preview",
+          "modals"
+        ],
+        "counts": {
+          "ui": 3,
+          "local": 2,
+          "sum": 5
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 4,
+        "ui_components": [
+          "button",
+          "divider",
+          "heading",
+          "hint",
+          "text"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Divider",
+          "Heading",
+          "Hint",
+          "Text"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "common/file-preview",
+          "common/file-upload",
+          "modals"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 5,
+          "local": 3,
+          "sum": 8
+        }
+      }
+    },
+    {
+      "route": "product-attributes",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-attributes/product-attributes.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 3,
+        "ui_components": [
+          "button",
+          "heading",
+          "input"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "Input"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "common/form",
+          "inputs/country-select",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 3,
+          "local": 4,
+          "sum": 7
+        }
+      }
+    },
+    {
+      "route": "product-list",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-list/product-list.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "layout-composer"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 7,
+        "ui_components": [
+          "button",
+          "container",
+          "heading"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Container",
+          "Heading"
+        ],
+        "ui_non_component_symbols": [
+          "toast",
+          "usePrompt"
+        ],
+        "local_components": [
+          "common/action-menu",
+          "layout-composer",
+          "table/configurable-data-table",
+          "table/data-table"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 3,
+          "local": 4,
+          "sum": 7
+        }
+      }
+    },
+    {
+      "route": "product-image-variants-edit",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-image-variants-edit/product-image-variants-edit.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 2,
+        "ui_components": [
+          "button",
+          "checkbox",
+          "heading"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Checkbox",
+          "Heading"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "modals",
+          "table/data-table",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 3,
+          "local": 3,
+          "sum": 6
+        }
+      }
+    },
+    {
+      "route": "product-prices",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-prices/product-prices.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 6,
+        "ui_components": [
+          "button",
+          "tooltip"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Tooltip"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "data-grid",
+          "modals",
+          "utilities/i18n",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [
+          "product-variants/product-variant-detail/constants"
+        ],
+        "counts": {
+          "ui": 2,
+          "local": 4,
+          "sum": 6
+        }
+      }
+    },
+    {
+      "route": "product-shipping-profile",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-shipping-profile/product-shipping-profile.tsx",
+      "direct": {
+        "ui_components": [
+          "heading"
+        ],
+        "ui_symbols": [
+          "Heading"
+        ],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 1,
+          "local": 1,
+          "sum": 2
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 4,
+        "ui_components": [
+          "button",
+          "heading"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "common/form",
+          "inputs/combobox",
+          "modals",
+          "utilities/keybound-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 2,
+          "local": 4,
+          "sum": 6
+        }
+      }
+    },
+    {
+      "route": "product-export",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-export/product-export.tsx",
+      "direct": {
+        "ui_components": [
+          "button",
+          "heading"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 2,
+          "local": 1,
+          "sum": 3
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 2,
+        "ui_components": [
+          "button",
+          "heading",
+          "text"
+        ],
+        "ui_symbols": [
+          "Button",
+          "Heading",
+          "Text"
+        ],
+        "ui_non_component_symbols": [
+          "toast"
+        ],
+        "local_components": [
+          "modals",
+          "table/data-table/data-table-filter"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 3,
+          "local": 2,
+          "sum": 5
+        }
+      }
+    },
+    {
+      "route": "product-sales-channels",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-sales-channels/product-sales-channels.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "modals"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 3,
+        "ui_components": [
+          "button"
+        ],
+        "ui_symbols": [
+          "Button"
+        ],
+        "ui_non_component_symbols": [
+          "createDataTableColumnHelper"
+        ],
+        "local_components": [
+          "data-table",
+          "data-table/helpers/sales-channels",
+          "modals"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 1,
+          "local": 3,
+          "sum": 4
+        }
+      }
+    },
+    {
+      "route": "product-metadata",
+      "screen_file": "medusa-src/packages/admin/dashboard/src/routes/products/product-metadata/product-metadata.tsx",
+      "direct": {
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "forms/metadata-form"
+        ],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      },
+      "transitive": {
+        "section_files_traversed": 1,
+        "ui_components": [],
+        "ui_symbols": [],
+        "ui_non_component_symbols": [],
+        "local_components": [
+          "forms/metadata-form"
+        ],
+        "imports_into_other_route_sections": [],
+        "counts": {
+          "ui": 0,
+          "local": 1,
+          "sum": 1
+        }
+      }
+    }
+  ]
+}
