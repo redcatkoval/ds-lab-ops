@@ -133,6 +133,93 @@ def _group_actions(group_text):
     return count_list(rest)
 
 
+def _is_destructive(obj_text):
+    """Стоит ли destructive: true среди полей верхнего уровня объекта.
+
+    Вложенные объекты не смотрим: признак — поле самого действия.
+    Возвращает True, False или None, если это не объектный литерал.
+    """
+    t = obj_text.strip()
+    if not t.startswith('{'):
+        return None
+    j = match_bracket(t, 0)
+    if j == -1:
+        return None
+    for field in split_top(t[1:j]):
+        m = re.match(r'destructive\s*:\s*(\w+)', field)
+        if m:
+            return m.group(1) == 'true'
+    return False
+
+
+def _flags_of_list(text):
+    """Признаки destructive по элементам литерального списка.
+
+    (список из True/False/None, разобрано целиком). None — элемент,
+    про который сказать нечего: тернарник, переменная, вызов.
+    """
+    t = text.strip()
+    if not t.startswith('['):
+        return [], False
+    j = match_bracket(t, 0)
+    if j == -1:
+        return [], False
+    flags, ok = [], True
+    for it in split_top(t[1:j]):
+        if it.startswith('...'):
+            # условный спред: спускаемся в первый массив внутри.
+            # Действия из него считаем присутствующими — так же,
+            # как их считает правило 4.1.
+            inner_ok = False
+            for m in re.finditer(r'\[', it):
+                k = match_bracket(it, m.start())
+                if k != -1:
+                    f, o = _flags_of_list(it[m.start():k + 1])
+                    flags += f; inner_ok = o; break
+            ok = ok and inner_ok
+        else:
+            d = _is_destructive(it)
+            if d is None: ok = False
+            flags.append(d)
+    return flags, ok
+
+
+def action_flags(props):
+    """Признаки destructive по действиям вызова, в порядке следования."""
+    if 'actions' in props:
+        return _flags_of_list(props['actions'][0])
+    if 'groups' not in props:
+        return [], False
+    t = props['groups'][0].strip()
+    if not t.startswith('['):
+        return [], False
+    j = match_bracket(t, 0)
+    if j == -1:
+        return [], False
+    flags, ok = [], True
+    for g in split_top(t[1:j]):
+        if g.startswith('...'):
+            got = False
+            for m in re.finditer(r'\[', g):
+                k = match_bracket(g, m.start())
+                if k != -1:
+                    for gg in split_top(g[m.start() + 1:k]):
+                        mm = re.search(r'\bactions\s*:', gg)
+                        if not mm: ok = False; continue
+                        f, o = _flags_of_list(gg[mm.end():])
+                        flags += f; ok = ok and o
+                    got = True
+                    break
+            ok = ok and got
+        else:
+            mm = re.search(r'\bactions\s*:', g)
+            if not mm:
+                ok = False; continue
+            f, o = _flags_of_list(g[mm.end():])
+            flags += f; ok = ok and o
+    return flags, ok
+
+
 def find_tags(src, name):
     """Вхождения <name ...>: (текст атрибутов, номер строки открывающего <)."""
     out = []
@@ -256,6 +343,25 @@ def scan(spec, root_override=None):
                             elif spread:
                                 spreads.append({'file': rel, 'line': tag_line, 'rule': rule,
                                                 'why': 'пропсы приходят спредом'})
+                        elif rule['check'] == 'destructive-last':
+                            flags, ok = action_flags(props)
+                            if spread and not ('actions' in props or 'groups' in props):
+                                ok = False
+                            if not ok:
+                                spreads.append({'file': rel, 'line': tag_line, 'rule': rule,
+                                                'why': 'список действий собирается в рантайме'})
+                            elif True in flags:
+                                first = flags.index(True)
+                                after = [i for i, f in enumerate(flags)
+                                         if i > first and f is False]
+                                if after:
+                                    fp, excerpt = fingerprint(jsx, tag)
+                                    findings.append({
+                                        'file': rel, 'line': tag_line, 'rule': rule,
+                                        'detail': ('обычное действие на месте %d после '
+                                                   'разрушающего на месте %d, всего действий %d'
+                                                   % (after[0] + 1, first + 1, len(flags))),
+                                        'fingerprint': fp, 'excerpt': excerpt})
                         elif rule['check'] == 'min-actions':
                             n, ok = count_actions(props)
                             if spread and not ('actions' in props or 'groups' in props):
