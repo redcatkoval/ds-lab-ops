@@ -1,0 +1,231 @@
+{
+  "generated": "2026-09-02",
+  "subject": "красный цвет в дизайн-системе Medusa: два заявленных семейства токенов, их значения и использование",
+  "method": {
+    "layers": {
+      "системный": "medusa-src/packages/design-system/ui/src/components",
+      "локальный": "medusa-src/packages/admin/dashboard/src/components",
+      "маршруты": "medusa-src/packages/admin/dashboard/src/routes"
+    },
+    "token_source": "medusa-src/packages/design-system/ui-preset/src/theme/tokens/colors.ts",
+    "effects_source": "medusa-src/packages/design-system/ui-preset/src/theme/tokens/effects.ts",
+    "mapping_source": "medusa-src/packages/design-system/ui-preset/src/theme/extension/theme.ts",
+    "search": "grep по классам Tailwind вида <утилита>-ui-<токен>; отдельно прямые var(--токен), hex- и rgb-литералы красного, палитра red/rose/pink/crimson",
+    "excluded": "dist/, node_modules/, .stories.tsx, .spec.tsx — где указано явно",
+    "paths_relative_to": "medusa-src/"
+  },
+
+  "values": {
+    "comment": "colors.ts: блок dark — строки 2–93, блок light — строки 94–185",
+    "dark": {
+      "--fg-error": { "value": "rgba(251, 113, 133, 1)", "line": 16 },
+      "--border-error": { "value": "rgba(251, 113, 133, 1)", "line": 19 },
+      "--border-danger": { "value": "rgba(190, 18, 60, 1)", "line": 52 },
+      "--button-danger": { "value": "rgba(159, 18, 57, 1)", "line": 26 },
+      "--button-danger-hover": { "value": "rgba(190, 18, 60, 1)", "line": 57 },
+      "--button-danger-pressed": { "value": "rgba(225, 29, 72, 1)", "line": 3 }
+    },
+    "light": {
+      "--fg-error": { "value": "rgba(225, 29, 72, 1)", "line": 164 },
+      "--border-error": { "value": "rgba(225, 29, 72, 1)", "line": 158 },
+      "--border-danger": { "value": "rgba(190, 18, 60, 1)", "line": 154 },
+      "--button-danger": { "value": "rgba(225, 29, 72, 1)", "line": 159 },
+      "--button-danger-hover": { "value": "rgba(190, 18, 60, 1)", "line": 162 },
+      "--button-danger-pressed": { "value": "rgba(159, 18, 57, 1)", "line": 121 }
+    },
+    "distinct_values_total": 4,
+    "distinct_values": [
+      "rgba(251, 113, 133, 1)",
+      "rgba(225, 29, 72, 1)",
+      "rgba(190, 18, 60, 1)",
+      "rgba(159, 18, 57, 1)"
+    ],
+    "fg_error_vs_button_danger": {
+      "light": "совпадают: обе rgba(225, 29, 72, 1)",
+      "dark": "различаются: fg-error rgba(251, 113, 133, 1), button-danger rgba(159, 18, 57, 1)"
+    },
+    "cross_theme": {
+      "не меняется между темами": ["--border-danger", "--button-danger-hover"],
+      "меняется": ["--fg-error", "--border-error", "--button-danger", "--button-danger-pressed"],
+      "button-danger и button-danger-pressed": "значения обменяны между темами: dark 159/225, light 225/159",
+      "border-error равен fg-error": "в обеих темах"
+    }
+  },
+
+  "tailwind_mapping": {
+    "source": "ui-preset/src/theme/extension/theme.ts",
+    "--border-danger": { "class": "border-ui-border-danger", "line": 191 },
+    "--border-error": { "class": "border-ui-border-error", "line": 194 },
+    "--button-danger": { "class": "bg-ui-button-danger", "line": 259 },
+    "--button-danger-hover": { "class": "bg-ui-button-danger-hover", "line": 261 },
+    "--button-danger-pressed": { "class": "bg-ui-button-danger-pressed", "line": 257 },
+    "--fg-error": { "class": "text-ui-fg-error", "line": 289 }
+  },
+
+  "usage": {
+    "total": 17,
+    "by_layer": { "системный": 7, "локальный": 5, "маршруты": 5 },
+    "by_token": {
+      "--fg-error": { "total": 9, "системный": 2, "локальный": 2, "маршруты": 5 },
+      "--border-error": { "total": 5, "системный": 2, "локальный": 3, "маршруты": 0 },
+      "--button-danger": { "total": 1, "системный": 1, "локальный": 0, "маршруты": 0 },
+      "--button-danger-hover": { "total": 1, "системный": 1, "локальный": 0, "маршруты": 0 },
+      "--button-danger-pressed": { "total": 1, "системный": 1, "локальный": 0, "маршруты": 0 },
+      "--border-danger": { "total": 0, "системный": 0, "локальный": 0, "маршруты": 0 }
+    },
+    "by_context": {
+      "текст": { "count": 9, "tokens": ["--fg-error"] },
+      "граница": { "count": 5, "tokens": ["--border-error"] },
+      "фон": { "count": 3, "tokens": ["--button-danger", "--button-danger-hover", "--button-danger-pressed"] }
+    },
+    "sites": {
+      "системный": [
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 37, "class": "bg-ui-button-danger", "context": "фон" },
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 38, "class": "hover:bg-ui-button-danger-hover", "context": "фон" },
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 39, "class": "active:bg-ui-button-danger-pressed", "context": "фон" },
+        { "file": "packages/design-system/ui/src/components/hint/hint.tsx", "line": 12, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/design-system/ui/src/components/toast/toast.tsx", "line": 131, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/design-system/ui/src/components/select/select.tsx", "line": 70, "class": "aria-[invalid=true]:border-ui-border-error", "context": "граница" },
+        { "file": "packages/design-system/ui/src/components/select/select.tsx", "line": 71, "class": "border-ui-border-error", "context": "граница" }
+      ],
+      "локальный": [
+        { "file": "packages/admin/dashboard/src/components/common/file-upload/file-upload.tsx", "line": 127, "class": "border-ui-border-error", "context": "граница" },
+        { "file": "packages/admin/dashboard/src/components/inputs/percentage-input/percentage-input.tsx", "line": 85, "class": "aria-[invalid=true]:border-ui-border-error", "context": "граница" },
+        { "file": "packages/admin/dashboard/src/components/inputs/percentage-input/percentage-input.tsx", "line": 86, "class": "border-ui-border-error", "context": "граница" },
+        { "file": "packages/admin/dashboard/src/components/table/save-view-dialog/save-view-dialog.tsx", "line": 148, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/admin/dashboard/src/components/table/view-selector/view-pills.tsx", "line": 232, "class": "text-ui-fg-error", "context": "текст" }
+      ],
+      "маршруты": [
+        { "file": "packages/admin/dashboard/src/routes/orders/order-allocate-items/components/order-create-fulfillment-form/order-allocate-items-item.tsx", "line": 107, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/admin/dashboard/src/routes/orders/order-allocate-items/components/order-create-fulfillment-form/order-allocate-items-item.tsx", "line": 154, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/admin/dashboard/src/routes/orders/order-allocate-items/components/order-create-fulfillment-form/order-allocate-items-item.tsx", "line": 271, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/admin/dashboard/src/routes/orders/order-allocate-items/components/order-create-fulfillment-form/order-allocate-items-item.tsx", "line": 295, "class": "text-ui-fg-error", "context": "текст" },
+        { "file": "packages/admin/dashboard/src/routes/products/product-detail/components/product-variant-section/product-variant-section.tsx", "line": 403, "class": "text-ui-fg-error", "context": "текст" }
+      ]
+    }
+  },
+
+  "red_outside_two_families": {
+    "прямые var(--fg-error) / var(--border-error) / var(--border-danger) / var(--button-danger*)": {
+      "count": 0,
+      "scope": "три слоя, без dist/"
+    },
+    "hex- и rgb-литералы красного": {
+      "count": 0,
+      "patterns": ["#e11d48", "#be123c", "#9f1239", "#fb7185", "#f43f5e", "#dc2626", "#ef4444", "#b91c1c", "rgb(a) с 225,29 / 190,18 / 159,18 / 251,113 / 244,63 / 220,38"],
+      "scope": "три слоя"
+    },
+    "палитра Tailwind red/rose/pink/crimson": {
+      "count": 1,
+      "sites": [
+        { "file": "packages/admin/dashboard/src/routes/orders/order-create-fulfillment/components/order-create-fulfillment-form/order-create-fulfillment-item.tsx", "line": 195, "class": "text-red-500", "layer": "маршруты" }
+      ]
+    },
+    "третье семейство токенов ui-tag-red-*": {
+      "comment": "отдельное семейство красного в той же системе, в задание не входило, найдено при обходе",
+      "total": 16,
+      "by_layer": { "системный": 8, "локальный": 6, "маршруты": 2 },
+      "sites_системный": [
+        { "file": "packages/design-system/ui/src/components/alert/alert.tsx", "line": 74, "class": "text-ui-tag-red-icon" },
+        { "file": "packages/design-system/ui/src/components/badge/badge.tsx", "line": 12, "classes": ["bg-ui-tag-red-bg", "border-ui-tag-red-border", "text-ui-tag-red-icon", "text-ui-tag-red-text"] },
+        { "file": "packages/design-system/ui/src/components/inline-tip/inline-tip.tsx", "line": 40, "class": "bg-ui-tag-red-icon" },
+        { "file": "packages/design-system/ui/src/components/status-badge/status-badge.tsx", "line": 11, "class": "bg-ui-tag-red-icon" },
+        { "file": "packages/design-system/ui/src/components/toast/toast.tsx", "line": 84, "class": "text-ui-tag-red-icon" }
+      ],
+      "sites_локальный": [
+        { "file": "packages/admin/dashboard/src/components/common/json-view-section/json-view-section.tsx", "line": 122, "class": "text-ui-tag-red-icon" },
+        { "file": "packages/admin/dashboard/src/components/data-grid/components/data-grid-cell-container.tsx", "line": 37, "classes": ["bg-ui-tag-red-bg", "text-ui-tag-red-text"] },
+        { "file": "packages/admin/dashboard/src/components/data-grid/components/data-grid-cell-container.tsx", "line": 55, "class": "text-ui-tag-red-icon" },
+        { "file": "packages/admin/dashboard/src/components/data-table/components/data-table-status-cell/data-table-status-cell.tsx", "line": 42, "class": "bg-ui-tag-red-icon" },
+        { "file": "packages/admin/dashboard/src/components/table/table-cells/common/status-cell/status-cell.tsx", "line": 24, "class": "bg-ui-tag-red-icon" }
+      ],
+      "sites_маршруты": [
+        { "file": "packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-history-section/workflow-execution-history-section.tsx", "line": 137, "class": "bg-ui-tag-red-icon" },
+        { "file": "packages/admin/dashboard/src/routes/workflow-executions/workflow-execution-detail/components/workflow-execution-timeline-section/workflow-execution-timeline-section.tsx", "line": 425, "class": "bg-ui-tag-red-icon" }
+      ]
+    },
+    "красные значения в тенях (effects.ts)": {
+      "comment": "четвёртое место, где живёт красный: не цветовые токены, а тени",
+      "dark": {
+        "--buttons-danger": { "line": 8, "содержит": ["rgba(159, 18, 57, 1)"] },
+        "--buttons-danger-focus": { "line": 9, "содержит": ["rgba(159, 18, 57, 1)"] },
+        "--borders-error": { "line": 13, "содержит": ["rgba(244, 63, 94, 1)", "rgba(225, 29, 72, 0.25)"] }
+      },
+      "light": {
+        "--buttons-danger-focus": { "line": 28, "содержит": ["rgba(190, 18, 60, 0.4)", "rgba(190, 18, 60, 1)"] },
+        "--borders-error": { "line": 30, "содержит": ["rgba(225, 29, 72, 1)", "rgba(225, 29, 72, 0.15)"] },
+        "--buttons-danger": { "line": 32, "содержит": ["rgba(190, 18, 60, 0.4)", "rgba(190, 18, 60, 1)"] }
+      },
+      "значение, которого нет среди шести цветовых токенов": "rgba(244, 63, 94, 1) — только в --borders-error тёмной темы, effects.ts:13"
+    },
+    "классы без определения": {
+      "comment": "упомянуты в исходнике, определения в packages/design-system/ не найдено — ни в ui-preset/src (все 9 файлов), ни в ui/src/main.css (10 строк)",
+      "sites": [
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 37, "classes": ["shadow-buttons-colored", "after:button-danger-gradient"] },
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 38, "classes": ["hover:after:button-danger-hover-gradient"] },
+        { "file": "packages/design-system/ui/src/components/button/button.tsx", "line": 39, "classes": ["active:after:button-danger-pressed-gradient"] }
+      ]
+    }
+  },
+
+  "dangerous_actions_outside_menu": {
+    "comment": "как окрашено удаление там, где оно не пункт ActionMenu",
+    "action_menu_itself": {
+      "file": "packages/admin/dashboard/src/components/common/action-menu/action-menu.tsx",
+      "красных токенов в файле": 0,
+      "grep": "error|danger|red|destruct — единственное совпадение на строке 14 внутри комментария про tooltip"
+    },
+    "button_variant_danger": {
+      "определение": { "file": "packages/design-system/ui/src/components/button/button.tsx", "lines": "36-41", "фон": "bg-ui-button-danger + hover + active, текст text-ui-fg-on-color" },
+      "вызовов в продуктовом коде": 3,
+      "sites": [
+        { "file": "packages/admin/dashboard/src/routes/profile/profile-detail/components/profile-mfa-section/mfa-disable-modal.tsx", "line": 79, "форма": "Button variant=\"danger\"" },
+        { "file": "packages/admin/dashboard/src/routes/profile/profile-detail/components/profile-mfa-section/profile-mfa-section.tsx", "line": 77, "форма": "prompt({ variant: \"danger\" })" },
+        { "file": "packages/admin/dashboard/src/routes/profile/profile-detail/components/profile-mfa-section/profile-mfa-section.tsx", "line": 115, "форма": "Button variant=\"danger\"" }
+      ],
+      "исключено": "stories и spec — 4 совпадения"
+    },
+    "prompt": {
+      "comment": "основной путь подтверждения удаления в дашборде",
+      "default_variant": { "file": "packages/design-system/ui/src/components/prompt/prompt.tsx", "line": 43, "value": "danger" },
+      "кнопка подтверждения": { "file": "packages/design-system/ui/src/components/prompt/prompt.tsx", "line": 142, "code": "variant={variant === \"danger\" ? \"danger\" : \"primary\"}" },
+      "вызовов await prompt({": { "локальный": 9, "маршруты": 103, "всего": 112 },
+      "файлов с usePrompt": { "локальный": 5, "маршруты": 82, "всего": 87 },
+      "из них с variant: \"confirmation\"": 7
+    },
+    "примеры": [
+      {
+        "случай": "удаление кнопкой-иконкой, красного нет",
+        "file": "packages/admin/dashboard/src/routes/products/product-media/components/product-media-gallery/product-media-gallery.tsx",
+        "lines": "131-140",
+        "факт": "IconButton без пропа variant, внутри иконка Trash и sr-only метка deleteImageLabel; ни один красный токен в разметке не участвует"
+      },
+      {
+        "случай": "удаление пунктом меню, красный текст",
+        "file": "packages/admin/dashboard/src/components/table/view-selector/view-pills.tsx",
+        "lines": "227-235",
+        "факт": "DropdownMenu.Item с className \"text-ui-fg-error flex items-center gap-x-2\", иконка Trash без своего класса"
+      },
+      {
+        "случай": "удаление пунктом меню, красного нет",
+        "file": "packages/admin/dashboard/src/components/forms/metadata-form/metadata-form.tsx",
+        "lines": "250-256",
+        "факт": "DropdownMenu.Item с className \"gap-x-2\", иконка Trash с классом text-ui-fg-subtle"
+      },
+      {
+        "случай": "отключение MFA кнопкой, красная заливка",
+        "file": "packages/admin/dashboard/src/routes/profile/profile-detail/components/profile-mfa-section/mfa-disable-modal.tsx",
+        "lines": "75-84",
+        "факт": "в футере два Button: variant=\"secondary\" на отмене и variant=\"danger\" на действии"
+      }
+    ]
+  },
+
+  "counts_summary": {
+    "мест, где красный берётся из двух заявленных семейств": 17,
+    "мест, где красный берётся из ui-tag-red-*": 16,
+    "мест, где красный написан мимо токенов": 1,
+    "мест, где удаление окрашено красным": "3 вызова variant=\"danger\" + 1 пункт меню с text-ui-fg-error",
+    "мест, где удаление красным не окрашено": "не измерялось полностью; 72 файла с иконкой Trash в двух слоях, из них 10 без ActionMenu"
+  }
+}
