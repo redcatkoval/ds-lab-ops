@@ -527,10 +527,10 @@
       "file": "components/data-table/data-table.tsx",
       "section": "4.5",
       "detail": "variant передан со значением \"primary\"",
-      "fingerprint": "14685dd59572555f",
+      "fingerprint": "632e4707b8c13b0e",
       "count": 1,
-      "line_hint": 433,
-      "excerpt": "<ActionMenu variant=\"primary\" {...actionMenu}",
+      "line_hint": 431,
+      "excerpt": "<ActionMenu variant=\"primary\" groups={[{ actions: actionMenu.actions }]}",
       "frozen": "2026-09-01"
     }
   ]
