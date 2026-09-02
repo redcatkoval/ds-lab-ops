@@ -5,32 +5,28 @@ import {
   PencilSquare,
   Plus,
   Trash,
-} from "@medusajs/icons"
-import type { Meta, StoryObj } from "@storybook/react"
-import * as React from "react"
+} from "@medusajs/icons";
+import type { Meta, StoryObj } from "@storybook/react";
+import * as React from "react";
 
-import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu"
-import { noop } from "./_shared"
+import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu";
+import { noop } from "./_shared";
 
 const meta = {
   title: "ActionMenu/По контракту",
   component: ActionMenu,
-} satisfies Meta<typeof ActionMenu>
+} satisfies Meta<typeof ActionMenu>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 /** Правило 4.1: действий два или больше. Это нижняя граница. */
 export const ДваДействия: Story = {
   name: "Два действия — минимум по правилу 4.1",
   args: {
-    groups: [
-      {
-        actions: [
-          { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
-          { icon: <Trash />, label: "Удалить", onClick: noop },
-        ],
-      },
+    actions: [
+      { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
+      { icon: <Trash />, label: "Удалить", onClick: noop },
     ],
   },
   parameters: {
@@ -42,22 +38,18 @@ export const ДваДействия: Story = {
         "группы, разделителя нет. Группировки в целевом API не будет вовсе.",
     },
   },
-}
+};
 
 /** Правило 4.1: до пяти действий — рекомендуемый потолок. */
 export const ПятьДействий: Story = {
   name: "Пять действий — рекомендуемый потолок",
   args: {
-    groups: [
-      {
-        actions: [
-          { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
-          { icon: <GlobeEurope />, label: "Переводы", to: "translations" },
-          { icon: <DocumentText />, label: "История изменений", onClick: noop },
-          { icon: <ArrowPath />, label: "Пересобрать", onClick: noop },
-          { icon: <Plus />, label: "Добавить вариант", onClick: noop },
-        ],
-      },
+    actions: [
+      { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
+      { icon: <GlobeEurope />, label: "Переводы", to: "translations" },
+      { icon: <DocumentText />, label: "История изменений", onClick: noop },
+      { icon: <ArrowPath />, label: "Пересобрать", onClick: noop },
+      { icon: <Plus />, label: "Добавить вариант", onClick: noop },
     ],
   },
   parameters: {
@@ -69,28 +61,20 @@ export const ПятьДействий: Story = {
       },
     },
   },
-}
+};
 
 /** Правило 4.3: разрушающее действие последнее и помечено красным. */
 export const СОпаснымДействием: Story = {
   name: "С опасным действием",
   args: {
-    groups: [
+    actions: [
+      { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
+      { icon: <GlobeEurope />, label: "Переводы", to: "translations" },
       {
-        actions: [
-          { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
-          { icon: <GlobeEurope />, label: "Переводы", to: "translations" },
-        ],
-      },
-      {
-        actions: [
-          {
-            icon: <Trash />,
-            label: "Удалить",
-            onClick: noop,
-            destructive: true,
-          },
-        ],
+        icon: <Trash />,
+        label: "Удалить",
+        onClick: noop,
+        destructive: true,
       },
     ],
   },
@@ -107,24 +91,20 @@ export const СОпаснымДействием: Story = {
         "здесь его нет, обработчик пустой.",
     },
   },
-}
+};
 
 /** Раздел 3: disabled и disabledTooltip. */
 export const ЗапрещённоеДействиеСПодсказкой: Story = {
   name: "С disabled и подсказкой",
   args: {
-    groups: [
+    actions: [
+      { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
       {
-        actions: [
-          { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
-          {
-            icon: <Trash />,
-            label: "Удалить",
-            onClick: noop,
-            disabled: true,
-            disabledTooltip: "Нельзя удалить: на товар ссылается активный заказ",
-          },
-        ],
+        icon: <Trash />,
+        label: "Удалить",
+        onClick: noop,
+        disabled: true,
+        disabledTooltip: "Нельзя удалить: на товар ссылается активный заказ",
       },
     ],
   },
@@ -139,8 +119,9 @@ export const ЗапрещённоеДействиеСПодсказкой: Story
     },
     docs: {
       description: {
-        story: "Подсказка появляется при наведении на запрещённый пункт, сбоку справа.",
+        story:
+          "Подсказка появляется при наведении на запрещённый пункт, сбоку справа.",
       },
     },
   },
-}
+};

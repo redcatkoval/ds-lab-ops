@@ -1,8 +1,8 @@
-import { PencilSquare } from "@medusajs/icons"
-import type { Meta, StoryObj } from "@storybook/react"
-import * as React from "react"
+import { PencilSquare } from "@medusajs/icons";
+import type { Meta, StoryObj } from "@storybook/react";
+import * as React from "react";
 
-import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu"
+import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu";
 
 /**
  * Состояния, запрещённые контрактом. Показаны намеренно: витрина
@@ -14,14 +14,14 @@ import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/com
 const meta = {
   title: "ActionMenu/Запрещено контрактом",
   component: ActionMenu,
-} satisfies Meta<typeof ActionMenu>
+} satisfies Meta<typeof ActionMenu>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const НольДействий: Story = {
   name: "Ноль действий — нарушение",
-  args: { groups: [] },
+  args: { actions: [] },
   parameters: {
     violation: {
       section: "4.1",
@@ -33,18 +33,12 @@ export const НольДействий: Story = {
         "линтера как долг.",
     },
   },
-}
+};
 
 export const ОдноДействие: Story = {
   name: "Одно действие — нарушение",
   args: {
-    groups: [
-      {
-        actions: [
-          { icon: <PencilSquare />, label: "Редактировать", to: "edit" },
-        ],
-      },
-    ],
+    actions: [{ icon: <PencilSquare />, label: "Редактировать", to: "edit" }],
   },
   parameters: {
     violation: {
@@ -56,4 +50,4 @@ export const ОдноДействие: Story = {
         "линтера как долг.",
     },
   },
-}
+};

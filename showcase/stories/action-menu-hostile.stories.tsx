@@ -1,9 +1,9 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import type { Meta, StoryObj } from "@storybook/react"
-import * as React from "react"
+import { PencilSquare, Trash } from "@medusajs/icons";
+import type { Meta, StoryObj } from "@storybook/react";
+import * as React from "react";
 
-import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu"
-import { noop } from "./_shared"
+import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu";
+import { noop } from "./_shared";
 
 /**
  * Враждебные данные. Контракт длину и вид метки не ограничивает
@@ -13,27 +13,23 @@ import { noop } from "./_shared"
 const meta = {
   title: "ActionMenu/Враждебные данные",
   component: ActionMenu,
-} satisfies Meta<typeof ActionMenu>
+} satisfies Meta<typeof ActionMenu>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const ОченьДлиннаяМетка: Story = {
   name: "Очень длинная метка",
   args: {
-    groups: [
+    actions: [
       {
-        actions: [
-          {
-            icon: <PencilSquare />,
-            label:
-              "Редактировать параметры доставки для всех регионов, включая те, " +
-              "где включён расчёт налога по месту назначения покупателя",
-            to: "edit",
-          },
-          { icon: <Trash />, label: "Удалить", onClick: noop },
-        ],
+        icon: <PencilSquare />,
+        label:
+          "Редактировать параметры доставки для всех регионов, включая те, " +
+          "где включён расчёт налога по месту назначения покупателя",
+        to: "edit",
       },
+      { icon: <Trash />, label: "Удалить", onClick: noop },
     ],
   },
   parameters: {
@@ -46,23 +42,19 @@ export const ОченьДлиннаяМетка: Story = {
       },
     },
   },
-}
+};
 
 export const МеткаБезПробелов: Story = {
   name: "Метка в одно слово без пробелов",
   args: {
-    groups: [
+    actions: [
       {
-        actions: [
-          {
-            icon: <PencilSquare />,
-            label:
-              "Редактироватьпараметрыдоставкидлявсехрегионоввключаярасчётналога",
-            to: "edit",
-          },
-          { icon: <Trash />, label: "Удалить", onClick: noop },
-        ],
+        icon: <PencilSquare />,
+        label:
+          "Редактироватьпараметрыдоставкидлявсехрегионоввключаярасчётналога",
+        to: "edit",
       },
+      { icon: <Trash />, label: "Удалить", onClick: noop },
     ],
   },
   parameters: {
@@ -75,4 +67,4 @@ export const МеткаБезПробелов: Story = {
       },
     },
   },
-}
+};

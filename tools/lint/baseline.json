@@ -21,10 +21,10 @@
       "file": "routes/campaigns/campaign-detail/components/campaign-budget/campaign-budget.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "45d38f7b83f750e7",
+      "fingerprint": "c08940e46425efc1",
       "count": 1,
       "line_hint": 43,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `edit-budget`, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `edit-budget`, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -32,10 +32,10 @@
       "file": "routes/campaigns/campaign-detail/components/campaign-configuration-section/campaign-configuration-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "9931c69cc508bf26",
+      "fingerprint": "c7a445cdc9148698",
       "count": 1,
       "line_hint": 22,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), icon: <PencilSquare />, to: \"configuration\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), icon: <PencilSquare />, to: \"configuration\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -43,10 +43,10 @@
       "file": "routes/categories/category-detail/components/category-organize-section/category-organize-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "70b43eb22433c1a2",
+      "fingerprint": "7d9412b9188f54b0",
       "count": 1,
       "line_hint": 30,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"categories.organize.action\"), icon: <PencilSquare />, to: `organize`, }, ",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"categories.organize.action\"), icon: <PencilSquare />, to: `organize`, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -54,10 +54,10 @@
       "file": "routes/categories/category-detail/components/category-product-section/category-product-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "ff17e0c71c1a210d",
+      "fingerprint": "4022f9d48cbb38c5",
       "count": 1,
       "line_hint": 114,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.add\"), icon: <PlusMini />, to: \"products\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.add\"), icon: <PlusMini />, to: \"products\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -65,10 +65,10 @@
       "file": "routes/collections/collection-detail/components/collection-product-section/collection-product-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "fdd8a7f5cdf06860",
+      "fingerprint": "081116ec3f8874c9",
       "count": 1,
       "line_hint": 104,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Plus />, label: t(\"actions.add\"), to: \"products\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Plus />, label: t(\"actions.add\"), to: \"products\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -76,10 +76,10 @@
       "file": "routes/customers/customer-detail/components/customer-address-section/customer-address-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "8559b5a0236ec67a",
+      "fingerprint": "a495acb7b1db0317",
       "count": 1,
       "line_hint": 92,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.delete\"), onClick: async () => { await handleDel",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: async () => { await handleDelete(address)",
       "frozen": "2026-09-01"
     },
     {
@@ -87,10 +87,10 @@
       "file": "routes/customers/customer-detail/components/customer-order-section/configurable-customer-order-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "bff8448843b7a540",
+      "fingerprint": "1204f019917d7a3e",
       "count": 1,
       "line_hint": 28,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"transferOwnership.label\"), to: `${order.id}/transfer`, icon: <ArrowPath /",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"transferOwnership.label\"), to: `${order.id}/transfer`, icon: <ArrowPath />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -98,10 +98,10 @@
       "file": "routes/customers/customer-detail/components/customer-order-section/customer-order-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "bff8448843b7a540",
+      "fingerprint": "1204f019917d7a3e",
       "count": 1,
       "line_hint": 100,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"transferOwnership.label\"), to: `${order.id}/transfer`, icon: <ArrowPath /",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"transferOwnership.label\"), to: `${order.id}/transfer`, icon: <ArrowPath />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -109,10 +109,10 @@
       "file": "routes/inventory/inventory-detail/components/inventory-item-attributes/attributes-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "9402dc164fb6b384",
+      "fingerprint": "52d25e4e400110e7",
       "count": 1,
       "line_hint": 23,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"attributes\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"attributes\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -120,10 +120,10 @@
       "file": "routes/inventory/inventory-detail/components/inventory-item-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e4e7c16a9bb277bb",
+      "fingerprint": "49b1ee07c8d72f14",
       "count": 1,
       "line_hint": 34,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: \"edit\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: \"edit\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -131,10 +131,10 @@
       "file": "routes/locations/location-detail/components/location-fulfillment-providers-section/location-fulfillment-providers-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e6668dd0e16df997",
+      "fingerprint": "f39248fd722ac0a6",
       "count": 1,
       "line_hint": 34,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"fulfillment-providers\", icon: <PencilSquare />, }, ]",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"fulfillment-providers\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -142,10 +142,10 @@
       "file": "routes/locations/location-detail/components/location-sales-channels-section/locations-sales-channels-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "961ec403610c5199",
+      "fingerprint": "4676a5fe9d87f912",
       "count": 1,
       "line_hint": 28,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"sales-channels\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"sales-channels\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -153,10 +153,10 @@
       "file": "routes/orders/order-create-claim/components/claim-create-form/claim-outbound-item.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "daf827d410ee25ce",
+      "fingerprint": "d3add01f0db76a15",
       "count": 1,
       "line_hint": 102,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boole",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boolean)}",
       "frozen": "2026-09-01"
     },
     {
@@ -164,10 +164,10 @@
       "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-outbound-item.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "daf827d410ee25ce",
+      "fingerprint": "d3add01f0db76a15",
       "count": 1,
       "line_hint": 121,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boole",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boolean)}",
       "frozen": "2026-09-01"
     },
     {
@@ -175,21 +175,21 @@
       "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "4b6e1640e5f4bac7",
+      "fingerprint": "75fe78ac2418de71",
+      "count": 1,
+      "line_hint": 352,
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), icon: <XCircle />, onClick: handleCancel, disabled: !!fulfillment.c",
+      "frozen": "2026-09-01"
+    },
+    {
+      "rule": "action-menu/min-actions",
+      "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
+      "section": "4.1",
+      "detail": "действий 1, требуется не меньше 2",
+      "fingerprint": "f35fae0aa3111529",
       "count": 1,
       "line_hint": 173,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"orders.fulfillment.fulfillItems\"), icon: <Buildings />, to: `/orders/${or",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "94bca51b10e8bd49",
-      "count": 1,
-      "line_hint": 356,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.cancel\"), icon: <XCircle />, onClick: handleCancel, disabled: !!f",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"orders.fulfillment.fulfillItems\"), icon: <Buildings />, to: `/orders/${order.id}/fulf",
       "frozen": "2026-09-01"
     },
     {
@@ -197,10 +197,10 @@
       "file": "routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "a6c4c138ce86e727",
+      "fingerprint": "f90b3b472474d8b3",
       "count": 1,
       "line_hint": 78,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.cancel\"), onClick: handleCancel, disabled: !!order.canceled_at, i",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), onClick: handleCancel, disabled: !!order.canceled_at, icon: <XCircl",
       "frozen": "2026-09-01"
     },
     {
@@ -208,10 +208,10 @@
       "file": "routes/orders/order-detail/components/order-payment-section/order-payment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "85d9aa719e57882f",
+      "fingerprint": "13b2229bb70c9eb4",
       "count": 1,
       "line_hint": 235,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"orders.payment.refund\"), icon: <XCircle />, to: `/orders/${order.id}/refu",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"orders.payment.refund\"), icon: <XCircle />, to: `/orders/${order.id}/refund?paymentId",
       "frozen": "2026-09-01"
     },
     {
@@ -219,10 +219,10 @@
       "file": "routes/price-lists/price-list-detail/components/price-list-configuration-section/price-list-configuration-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "dd3b6ca683132e3b",
+      "fingerprint": "bbc312a267546eb5",
       "count": 1,
       "line_hint": 27,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"configuration\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"configuration\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -230,10 +230,10 @@
       "file": "routes/product-options/product-option-detail/components/product-option-values-section/product-option-value-row-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e9a1df220cc044ac",
+      "fingerprint": "334d33b4b547d50d",
       "count": 1,
       "line_hint": 46,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -241,10 +241,10 @@
       "file": "routes/product-options/product-option-value-detail/components/product-option-value-general-section/product-option-value-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "bdbe476a2284f3b3",
+      "fingerprint": "0e916c4de4bb3cec",
       "count": 1,
       "line_hint": 26,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.delete\"), icon: <Trash />, onClick: handleDelete, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.delete\"), icon: <Trash />, onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -252,10 +252,10 @@
       "file": "routes/product-variants/product-variant-detail/components/variant-inventory-section/inventory-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "81e15ffc83cf4ae0",
+      "fingerprint": "df4210140e4ed969",
       "count": 1,
       "line_hint": 12,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Buildings />, label: t(\"products.variant.inventory.navigateToItem\"), to: `/i",
+      "excerpt": "<ActionMenu actions={[ { icon: <Buildings />, label: t(\"products.variant.inventory.navigateToItem\"), to: `/inventory/${i",
       "frozen": "2026-09-01"
     },
     {
@@ -263,10 +263,10 @@
       "file": "routes/product-variants/product-variant-detail/components/variant-inventory-section/variant-inventory-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "fa542f70681f7666",
+      "fingerprint": "307ec3bbcecbac0a",
       "count": 1,
       "line_hint": 48,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t( hasKit ? \"products.variant.inventory.manageKit\" : \"products.variant.inven",
+      "excerpt": "<ActionMenu actions={[ { label: t( hasKit ? \"products.variant.inventory.manageKit\" : \"products.variant.inventory.manageI",
       "frozen": "2026-09-01"
     },
     {
@@ -274,10 +274,10 @@
       "file": "routes/product-variants/product-variant-detail/components/variant-media-section/variant-media-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "a6951bf4bd955d6b",
+      "fingerprint": "aa895b5a8405f2b0",
       "count": 1,
       "line_hint": 28,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.editImages\"), to: \"media\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.editImages\"), to: \"media\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -285,10 +285,10 @@
       "file": "routes/product-variants/product-variant-detail/components/variant-prices-section/variant-prices-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "9489c71ac46b3100",
+      "fingerprint": "e05c4f6d572489a2",
       "count": 1,
       "line_hint": 38,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: `/products/${variant.product_id}/variants/${variant.i",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: `/products/${variant.product_id}/variants/${variant.id}/prices`, ",
       "frozen": "2026-09-01"
     },
     {
@@ -296,10 +296,10 @@
       "file": "routes/products/product-create/components/product-create-details-form/components/product-create-details-media-section/product-create-details-media-section.tsx",
       "section": "4.1",
       "detail": "действий 0, требуется не меньше 2",
-      "fingerprint": "9ddcc1fe1b1e3527",
+      "fingerprint": "a1bb1c68467c526e",
       "count": 1,
-      "line_hint": 303,
-      "excerpt": "<ActionMenu groups={[]}",
+      "line_hint": 295,
+      "excerpt": "<ActionMenu actions={[]}",
       "frozen": "2026-09-01"
     },
     {
@@ -307,10 +307,10 @@
       "file": "routes/products/product-detail/components/product-attribute-section/product-attribute-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "9402dc164fb6b384",
+      "fingerprint": "52d25e4e400110e7",
       "count": 1,
       "line_hint": 24,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"attributes\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"attributes\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -318,10 +318,10 @@
       "file": "routes/products/product-detail/components/product-media-section/product-media-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "a6ba9ced52f0f549",
+      "fingerprint": "28f3056490c6a91d",
       "count": 1,
       "line_hint": 90,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.editImages\"), to: \"media?view=edit\", icon: <PencilSquare />, }, ]",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.editImages\"), to: \"media?view=edit\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -329,21 +329,21 @@
       "file": "routes/products/product-detail/components/product-option-section/product-option-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "6cfc1b92cf2cbf19",
+      "fingerprint": "979cdc8d12c8aef6",
+      "count": 1,
+      "line_hint": 41,
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.manage\"), to: \"options/manage\", icon: <PencilSquare />, }, ]}",
+      "frozen": "2026-09-01"
+    },
+    {
+      "rule": "action-menu/min-actions",
+      "file": "routes/products/product-detail/components/product-option-section/product-option-section.tsx",
+      "section": "4.1",
+      "detail": "действий 1, требуется не меньше 2",
+      "fingerprint": "ee2c7eb7b28c3aaa",
       "count": 1,
       "line_hint": 16,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.goToProductOption\"), to: `/product-options/${option.id}`, icon: <",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/products/product-detail/components/product-option-section/product-option-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "7b21301c21f7b9b3",
-      "count": 1,
-      "line_hint": 45,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.manage\"), to: \"options/manage\", icon: <PencilSquare />, }, ], }, ",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.goToProductOption\"), to: `/product-options/${option.id}`, icon: <ArrowRight /",
       "frozen": "2026-09-01"
     },
     {
@@ -351,10 +351,10 @@
       "file": "routes/products/product-detail/components/product-organization-section/product-organization-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "bcd31b9583f26650",
+      "fingerprint": "e7fe73c9547af4d0",
       "count": 1,
       "line_hint": 24,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"organization\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"organization\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -362,10 +362,10 @@
       "file": "routes/products/product-detail/components/product-sales-channel-section/product-sales-channel-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "961ec403610c5199",
+      "fingerprint": "4676a5fe9d87f912",
       "count": 1,
       "line_hint": 36,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"sales-channels\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"sales-channels\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -373,10 +373,10 @@
       "file": "routes/products/product-detail/components/product-shipping-profile-section/product-shipping-profile-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "42c663c7caa98e46",
+      "fingerprint": "b2004bfb119ac6ff",
       "count": 1,
       "line_hint": 24,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"shipping-profile\", icon: <PencilSquare />, }, ], }, ",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"shipping-profile\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -384,10 +384,10 @@
       "file": "routes/profile/profile-detail/components/profile-general-section/profile-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "fea068225082d38a",
+      "fingerprint": "49f748c7a28e069b",
       "count": 1,
       "line_hint": 26,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.edit\"), to: \"edit\", icon: <PencilSquare />, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.edit\"), to: \"edit\", icon: <PencilSquare />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -395,10 +395,10 @@
       "file": "routes/promotions/promotion-detail/components/promotion-conditions-section/promotion-conditions-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "0b058500cdbb6118",
+      "fingerprint": "a285a1018822c949",
       "count": 1,
       "line_hint": 72,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `${ruleType}/edit`, }, ], }, ",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `${ruleType}/edit`, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -406,10 +406,10 @@
       "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "d3620788955c3fb2",
+      "fingerprint": "2c4192af9fe98749",
       "count": 1,
-      "line_hint": 191,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"actions.remove\"), onClick: handleRemove, icon: <Trash />, }, ], }, ]}",
+      "line_hint": 187,
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: handleRemove, icon: <Trash />, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -417,10 +417,10 @@
       "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "f4b248d4a913ba23",
+      "fingerprint": "775326b5ae481363",
       "count": 1,
       "line_hint": 105,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { label: t(\"regions.addCountries\"), icon: <PlusMini />, to: \"countries/add\", }, ], },",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"regions.addCountries\"), icon: <PlusMini />, to: \"countries/add\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -428,10 +428,10 @@
       "file": "routes/reservations/reservation-detail/components/reservation-general-section/reservation-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "8845dd865f17a068",
+      "fingerprint": "5279280fd6214b82",
       "count": 1,
       "line_hint": 48,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `edit`, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: `edit`, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -439,10 +439,10 @@
       "file": "routes/roles/role-detail/components/role-users-section/role-users-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "eb5a9ab7a213a1af",
+      "fingerprint": "48bc6b8ca92784ad",
       "count": 1,
       "line_hint": 203,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -450,10 +450,10 @@
       "file": "routes/shipping-profiles/shipping-profile-detail/components/shipping-profile-general-section/shipping-profile-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e9a1df220cc044ac",
+      "fingerprint": "334d33b4b547d50d",
       "count": 1,
       "line_hint": 59,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -461,10 +461,10 @@
       "file": "routes/shipping-profiles/shipping-profiles-list/components/shipping-profile-list-table/shipping-options-row-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e9a1df220cc044ac",
+      "fingerprint": "334d33b4b547d50d",
       "count": 1,
       "line_hint": 50,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -472,10 +472,10 @@
       "file": "routes/store/store-detail/components/store-currency-section/store-currency-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "8500374ee728e9e6",
+      "fingerprint": "c28ba9425844dc84",
       "count": 1,
       "line_hint": 153,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Plus />, label: t(\"actions.add\"), to: \"currencies\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Plus />, label: t(\"actions.add\"), to: \"currencies\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -483,10 +483,10 @@
       "file": "routes/store/store-detail/components/store-general-section/store-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e4e7c16a9bb277bb",
+      "fingerprint": "49b1ee07c8d72f14",
       "count": 1,
       "line_hint": 47,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: \"edit\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), to: \"edit\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -494,21 +494,21 @@
       "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "eb5a9ab7a213a1af",
-      "count": 1,
-      "line_hint": 209,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ], }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "effa32ccae3835f5",
+      "fingerprint": "12aefbfda3cc7120",
       "count": 1,
       "line_hint": 115,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <Plus />, label: t(\"actions.add\"), to: \"locales\", }, ], }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Plus />, label: t(\"actions.add\"), to: \"locales\", }, ]}",
+      "frozen": "2026-09-01"
+    },
+    {
+      "rule": "action-menu/min-actions",
+      "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
+      "section": "4.1",
+      "detail": "действий 1, требуется не меньше 2",
+      "fingerprint": "48bc6b8ca92784ad",
+      "count": 1,
+      "line_hint": 205,
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -516,21 +516,10 @@
       "file": "routes/users/user-list/components/user-list-table/user-list-table-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "10396b42d951a43c",
+      "fingerprint": "b3529a22105f8d76",
       "count": 1,
       "line_hint": 17,
-      "excerpt": "<ActionMenu groups={[ { actions: [ { icon: <PencilSquare />, label: t(\"actions.edit\"), onClick: () => navigate(`/setting",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/no-trigger-variant",
-      "file": "components/data-table/data-table.tsx",
-      "section": "4.5",
-      "detail": "variant передан со значением \"primary\"",
-      "fingerprint": "632e4707b8c13b0e",
-      "count": 1,
-      "line_hint": 431,
-      "excerpt": "<ActionMenu variant=\"primary\" groups={[{ actions: actionMenu.actions }]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), onClick: () => navigate(`/settings/users/${us",
       "frozen": "2026-09-01"
     }
   ]
