@@ -315,17 +315,6 @@
     },
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/products/product-detail/components/product-media-section/product-media-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "28f3056490c6a91d",
-      "count": 1,
-      "line_hint": 90,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.editImages\"), to: \"media?view=edit\", icon: <PencilSquare />, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/products/product-detail/components/product-option-section/product-option-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
