@@ -76,10 +76,10 @@
       "file": "routes/customers/customer-detail/components/customer-address-section/customer-address-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "a495acb7b1db0317",
+      "fingerprint": "b00a3a22fc8c258b",
       "count": 1,
       "line_hint": 92,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: async () => { await handleDelete(address)",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: async () => { await ha",
       "frozen": "2026-09-01"
     },
     {
@@ -153,10 +153,10 @@
       "file": "routes/orders/order-create-claim/components/claim-create-form/claim-outbound-item.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "d3add01f0db76a15",
+      "fingerprint": "31893080a51e1b98",
       "count": 1,
       "line_hint": 102,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boolean)}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, destructive: true, }, ].filte",
       "frozen": "2026-09-01"
     },
     {
@@ -164,10 +164,10 @@
       "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-outbound-item.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "d3add01f0db76a15",
+      "fingerprint": "31893080a51e1b98",
       "count": 1,
       "line_hint": 121,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, }, ].filter(Boolean)}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, destructive: true, }, ].filte",
       "frozen": "2026-09-01"
     },
     {
@@ -175,10 +175,10 @@
       "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "75fe78ac2418de71",
+      "fingerprint": "e9cd4fc8fc1c1f30",
       "count": 1,
       "line_hint": 352,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), icon: <XCircle />, onClick: handleCancel, disabled: !!fulfillment.c",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), icon: <XCircle />, destructive: true, onClick: handleCancel, disabl",
       "frozen": "2026-09-01"
     },
     {
@@ -197,7 +197,7 @@
       "file": "routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "f90b3b472474d8b3",
+      "fingerprint": "dc231c0ac6d270fa",
       "count": 1,
       "line_hint": 78,
       "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), onClick: handleCancel, disabled: !!order.canceled_at, icon: <XCircl",
@@ -230,10 +230,10 @@
       "file": "routes/product-options/product-option-detail/components/product-option-values-section/product-option-value-row-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "334d33b4b547d50d",
+      "fingerprint": "dba12e45a96e33c8",
       "count": 1,
       "line_hint": 46,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -241,10 +241,10 @@
       "file": "routes/product-options/product-option-value-detail/components/product-option-value-general-section/product-option-value-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "0e916c4de4bb3cec",
+      "fingerprint": "6f878ef98d12c0f6",
       "count": 1,
       "line_hint": 26,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.delete\"), icon: <Trash />, onClick: handleDelete, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.delete\"), icon: <Trash />, destructive: true, onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -298,7 +298,7 @@
       "detail": "действий 0, требуется не меньше 2",
       "fingerprint": "a1bb1c68467c526e",
       "count": 1,
-      "line_hint": 295,
+      "line_hint": 296,
       "excerpt": "<ActionMenu actions={[]}",
       "frozen": "2026-09-01"
     },
@@ -406,10 +406,10 @@
       "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "2c4192af9fe98749",
+      "fingerprint": "775326b5ae481363",
       "count": 1,
-      "line_hint": 187,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: handleRemove, icon: <Trash />, }, ]}",
+      "line_hint": 105,
+      "excerpt": "<ActionMenu actions={[ { label: t(\"regions.addCountries\"), icon: <PlusMini />, to: \"countries/add\", }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -417,10 +417,10 @@
       "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "775326b5ae481363",
+      "fingerprint": "8f8bc6053aa2afc7",
       "count": 1,
-      "line_hint": 105,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"regions.addCountries\"), icon: <PlusMini />, to: \"countries/add\", }, ]}",
+      "line_hint": 187,
+      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: handleRemove, icon: <Trash />, destructive: true, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -439,10 +439,10 @@
       "file": "routes/roles/role-detail/components/role-users-section/role-users-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "48bc6b8ca92784ad",
+      "fingerprint": "70d2e55182ff645d",
       "count": 1,
       "line_hint": 203,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -450,10 +450,10 @@
       "file": "routes/shipping-profiles/shipping-profile-detail/components/shipping-profile-general-section/shipping-profile-general-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "334d33b4b547d50d",
+      "fingerprint": "dba12e45a96e33c8",
       "count": 1,
       "line_hint": 59,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -461,10 +461,10 @@
       "file": "routes/shipping-profiles/shipping-profiles-list/components/shipping-profile-list-table/shipping-options-row-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "334d33b4b547d50d",
+      "fingerprint": "dba12e45a96e33c8",
       "count": 1,
       "line_hint": 50,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -505,10 +505,10 @@
       "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "48bc6b8ca92784ad",
+      "fingerprint": "70d2e55182ff645d",
       "count": 1,
       "line_hint": 205,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
+      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
       "frozen": "2026-09-01"
     },
     {
