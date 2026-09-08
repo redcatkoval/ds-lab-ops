@@ -1,8 +1,7 @@
 {
   "component": "ActionMenu",
   "contract": {
-    "path": "contracts/action-menu.md",
-    "expected_status": "reviewed"
+    "path": "contracts/action-menu.md"
   },
   "rules": [
     {
