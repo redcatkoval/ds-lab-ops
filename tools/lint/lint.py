@@ -432,6 +432,12 @@ def check_contract(spec, errors):
             errors.append(
                 'правило %s: цитата раздела %s не найдена в %s — правило и контракт разошлись'
                 % (r['id'], r['section'], spec['contract']['path']))
+        exc = r.get('exception')
+        if exc and exc['anchor'] not in text:
+            errors.append(
+                'правило %s, исключение %s: цитата раздела %s не найдена в %s — '
+                'исключение и контракт разошлись'
+                % (r['id'], exc['id'], exc['section'], spec['contract']['path']))
     return status
 
 
@@ -489,10 +495,24 @@ def scan_declarations(spec, root, errors):
     return findings, checked
 
 
+def is_excepted(rule, props, n):
+    """Исключение 4.1: ровно одно действие, и оно несёт destructive: true.
+
+    Ноль действий не покрыт. Элемент, про который признак неизвестен
+    (тернарник, переменная), исключением тоже не покрыт: там не True,
+    а None, и вызов остаётся нарушением.
+    """
+    exc = rule.get('exception')
+    if not exc or exc['id'] != 'single-destructive' or n != 1:
+        return False
+    flags, ok = action_flags(props)
+    return ok and flags == [True]
+
+
 def scan(spec, root_override=None):
     root = resolve_root(spec, root_override)
     exts = tuple(spec['scan']['extensions'])
-    findings, spreads, files, tags = [], [], 0, 0
+    findings, spreads, excepted, files, tags = [], [], [], 0, 0
     for dp, dn, fns in os.walk(root):
         dn[:] = [d for d in dn if d not in spec['scan']['exclude_dirs']]
         for fn in sorted(fns):
@@ -551,13 +571,16 @@ def scan(spec, root_override=None):
                             if not ok:
                                 spreads.append({'file': rel, 'line': tag_line, 'rule': rule,
                                                 'why': 'список действий собирается в рантайме'})
+                            elif n < rule['min'] and is_excepted(rule, props, n):
+                                excepted.append({'file': rel, 'line': tag_line, 'rule': rule,
+                                                 'why': 'одно действие, и оно разрушающее'})
                             elif n < rule['min']:
                                 fp, excerpt = fingerprint(jsx, tag)
                                 findings.append({
                                     'file': rel, 'line': tag_line, 'rule': rule,
                                     'detail': 'действий %d, требуется не меньше %d' % (n, rule['min']),
                                     'fingerprint': fp, 'excerpt': excerpt})
-    return findings, spreads, tags
+    return findings, spreads, excepted, tags
 
 
 def key(x):
@@ -573,7 +596,7 @@ def main():
                     help='переписать baseline текущими нарушениями')
     args = ap.parse_args()
 
-    errors, all_f, all_s, total, declared = [], [], [], 0, 0
+    errors, all_f, all_s, all_e, total, declared = [], [], [], [], 0, 0
     specs = sorted(f for f in os.listdir(os.path.join(HERE, 'rules')) if f.endswith('.json'))
     status = None
     for fn in specs:
@@ -585,8 +608,8 @@ def main():
         df, dc = scan_declarations(spec, root, errors)
         if errors:
             break
-        f, sp, t = scan(spec, args.root)
-        all_f += df + f; all_s += sp; total += t; declared += dc
+        f, sp, ex, t = scan(spec, args.root)
+        all_f += df + f; all_s += sp; all_e += ex; total += t; declared += dc
         print('Контракт: %s (статус %s)' % (spec['contract']['path'], status))
         print('Область:  %s' % (args.root or spec['scan']['root']))
         for r in spec['rules']:
@@ -676,6 +699,13 @@ def main():
             print('    строка на момент заморозки — %s, для поиска не использовалась'
                   % e.get('line_hint'))
             print('    вычеркнуть из %s' % os.path.relpath(args.baseline, DS_OPS))
+        print()
+
+    if all_e:
+        print('ПОД ИСКЛЮЧЕНИЕМ (%d) — правило не нарушено' % len(all_e))
+        for x in sorted(all_e, key=lambda y: (y['file'], y['line'])):
+            print('  %s:%d  раздел %s — %s'
+                  % (x['file'], x['line'], x['rule']['exception']['section'], x['why']))
         print()
 
     if all_s:

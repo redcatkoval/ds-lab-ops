@@ -18,17 +18,6 @@
   "entries": [
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/customers/customer-detail/components/customer-address-section/customer-address-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "b00a3a22fc8c258b",
-      "count": 1,
-      "line_hint": 92,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: async () => { await ha",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/customers/customer-detail/components/customer-order-section/configurable-customer-order-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
@@ -51,39 +40,6 @@
     },
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-create-claim/components/claim-create-form/claim-outbound-item.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "31893080a51e1b98",
-      "count": 1,
-      "line_hint": 102,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, destructive: true, }, ].filte",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-outbound-item.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "31893080a51e1b98",
-      "count": 1,
-      "line_hint": 121,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: onRemove, icon: <XCircle />, destructive: true, }, ].filte",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "e9cd4fc8fc1c1f30",
-      "count": 1,
-      "line_hint": 352,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), icon: <XCircle />, destructive: true, onClick: handleCancel, disabl",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
@@ -95,17 +51,6 @@
     },
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "dc231c0ac6d270fa",
-      "count": 1,
-      "line_hint": 78,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.cancel\"), onClick: handleCancel, disabled: !!order.canceled_at, icon: <XCircl",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/orders/order-detail/components/order-payment-section/order-payment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
@@ -113,28 +58,6 @@
       "count": 1,
       "line_hint": 235,
       "excerpt": "<ActionMenu actions={[ { label: t(\"orders.payment.refund\"), icon: <XCircle />, to: `/orders/${order.id}/refund?paymentId",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/product-options/product-option-detail/components/product-option-values-section/product-option-value-row-actions.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "dba12e45a96e33c8",
-      "count": 1,
-      "line_hint": 46,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/product-options/product-option-value-detail/components/product-option-value-general-section/product-option-value-general-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "6f878ef98d12c0f6",
-      "count": 1,
-      "line_hint": 26,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.delete\"), icon: <Trash />, destructive: true, onClick: handleDelete, }, ]}",
       "frozen": "2026-09-01"
     },
     {
@@ -183,61 +106,6 @@
     },
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "8f8bc6053aa2afc7",
-      "count": 1,
-      "line_hint": 189,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"actions.remove\"), onClick: handleRemove, icon: <Trash />, destructive: true, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/roles/role-detail/components/role-users-section/role-users-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "70d2e55182ff645d",
-      "count": 1,
-      "line_hint": 203,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/shipping-profiles/shipping-profile-detail/components/shipping-profile-general-section/shipping-profile-general-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "dba12e45a96e33c8",
-      "count": 1,
-      "line_hint": 59,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/shipping-profiles/shipping-profiles-list/components/shipping-profile-list-table/shipping-options-row-actions.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "dba12e45a96e33c8",
-      "count": 1,
-      "line_hint": 50,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.delete\"), onClick: handleDelete, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "70d2e55182ff645d",
-      "count": 1,
-      "line_hint": 201,
-      "excerpt": "<ActionMenu actions={[ { icon: <Trash />, destructive: true, label: t(\"actions.remove\"), onClick: handleRemove, }, ]}",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/users/user-list/components/user-list-table/user-list-table-actions.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
@@ -247,5 +115,132 @@
       "excerpt": "<ActionMenu actions={[ { icon: <PencilSquare />, label: t(\"actions.edit\"), onClick: () => navigate(`/settings/users/${us",
       "frozen": "2026-09-01"
     }
-  ]
+  ],
+  "вычеркнуто": {
+    "что_это": "записи, снятые с долга по основанию, а не потому, что нарушение исправлено. Код не менялся: вызовы на месте, правило 4.1 их по-прежнему находит",
+    "чем_отличается_от_устаревших": "устаревшая запись — нарушение исправлено, вызова больше нет. Вычеркнутая по основанию — вызов есть и признан законным решением",
+    "внимание": "линтер этот список не читает. Пока исключение не внесено в правило, снятые записи считаются новыми нарушениями",
+    "записи": [
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/customers/customer-detail/components/customer-address-section/customer-address-section.tsx",
+        "fingerprint": "b00a3a22fc8c258b",
+        "count": 1,
+        "line_hint": 92,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/orders/order-create-claim/components/claim-create-form/claim-outbound-item.tsx",
+        "fingerprint": "31893080a51e1b98",
+        "count": 1,
+        "line_hint": 102,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-outbound-item.tsx",
+        "fingerprint": "31893080a51e1b98",
+        "count": 1,
+        "line_hint": 121,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
+        "fingerprint": "e9cd4fc8fc1c1f30",
+        "count": 1,
+        "line_hint": 352,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
+        "fingerprint": "dc231c0ac6d270fa",
+        "count": 1,
+        "line_hint": 78,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/product-options/product-option-detail/components/product-option-values-section/product-option-value-row-actions.tsx",
+        "fingerprint": "dba12e45a96e33c8",
+        "count": 1,
+        "line_hint": 46,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/product-options/product-option-value-detail/components/product-option-value-general-section/product-option-value-general-section.tsx",
+        "fingerprint": "6f878ef98d12c0f6",
+        "count": 1,
+        "line_hint": 26,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
+        "fingerprint": "8f8bc6053aa2afc7",
+        "count": 1,
+        "line_hint": 189,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/roles/role-detail/components/role-users-section/role-users-section.tsx",
+        "fingerprint": "70d2e55182ff645d",
+        "count": 1,
+        "line_hint": 203,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/shipping-profiles/shipping-profile-detail/components/shipping-profile-general-section/shipping-profile-general-section.tsx",
+        "fingerprint": "dba12e45a96e33c8",
+        "count": 1,
+        "line_hint": 59,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/shipping-profiles/shipping-profiles-list/components/shipping-profile-list-table/shipping-options-row-actions.tsx",
+        "fingerprint": "dba12e45a96e33c8",
+        "count": 1,
+        "line_hint": 50,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
+        "fingerprint": "70d2e55182ff645d",
+        "count": 1,
+        "line_hint": 201,
+        "было": "действий 1, требуется не меньше 2",
+        "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      }
+    ]
+  }
 }
