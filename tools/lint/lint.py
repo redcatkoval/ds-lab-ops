@@ -247,6 +247,35 @@ def strip_comments(s):
     return ''.join(out)
 
 
+def blank_comments(src):
+    """Заменить содержимое комментариев пробелами, сохранив длину.
+
+    Смещения и номера строк не меняются: гасятся только символы,
+    переводы строк остаются на месте. Строковые литералы не трогаются,
+    поэтому `https://…` комментарием не считается.
+
+    Мёртвый код не проверяется и не считается — DEC-019.
+    """
+    out, i, n = list(src), 0, len(src)
+    while i < n:
+        c = src[i]
+        if c in '"\'`':
+            i = skip_string(src, i); continue
+        if c == '/' and src[i + 1:i + 2] == '*':
+            j = src.find('*/', i + 2)
+            j = n if j == -1 else j + 2
+        elif c == '/' and src[i + 1:i + 2] == '/':
+            j = src.find('\n', i)
+            j = n if j == -1 else j
+        else:
+            i += 1; continue
+        for k in range(i, j):
+            if out[k] != '\n':
+                out[k] = ' '
+        i = j
+    return ''.join(out)
+
+
 def read_type_decl(src, name):
     """Правая часть `type <name> = …`. (текст, номер строки) или (None, 0).
 
@@ -461,7 +490,7 @@ def scan_declarations(spec, root, errors):
             errors.append('правило %s: файл объявления не найден — %s'
                           % (rule['id'], decl['file']))
             continue
-        src = open(path, encoding='utf-8', errors='replace').read()
+        src = blank_comments(open(path, encoding='utf-8', errors='replace').read())
         rhs, line = read_type_decl(src, decl['type'])
         if rhs is None:
             errors.append('правило %s: объявление `type %s` не найдено в %s — '
@@ -512,7 +541,7 @@ def is_excepted(rule, props, n):
 def scan(spec, root_override=None):
     root = resolve_root(spec, root_override)
     exts = tuple(spec['scan']['extensions'])
-    findings, spreads, excepted, files, tags = [], [], [], 0, 0
+    findings, spreads, excepted, commented, files, tags = [], [], [], [], 0, 0
     for dp, dn, fns in os.walk(root):
         dn[:] = [d for d in dn if d not in spec['scan']['exclude_dirs']]
         for fn in sorted(fns):
@@ -520,11 +549,19 @@ def scan(spec, root_override=None):
             p = os.path.join(dp, fn)
             rel = os.path.relpath(p, root)
             if any(rel.startswith(x) for x in spec['scan']['exclude_paths']): continue
-            src = open(p, encoding='utf-8', errors='replace').read()
+            raw = open(p, encoding='utf-8', errors='replace').read()
+            src = blank_comments(raw)
             tag_rules = [r for r in spec['rules'] if 'jsx' in r]
             jsx_names = sorted({r['jsx'] for r in tag_rules})
             seen_file = False
             for jsx in jsx_names:
+                # то же вхождение в исходном тексте и в погашенном:
+                # разница — вызовы, стоящие в комментарии (DEC-019).
+                live = {at for _, at in find_tags(src, jsx)}
+                for _, at in find_tags(raw, jsx):
+                    if at not in live:
+                        commented.append({'file': rel, 'jsx': jsx,
+                                          'line': raw[:at].count('\n') + 1})
                 if '<' + jsx not in src: continue
                 for tag, at in find_tags(src, jsx):
                     tags += 1
@@ -580,7 +617,7 @@ def scan(spec, root_override=None):
                                     'file': rel, 'line': tag_line, 'rule': rule,
                                     'detail': 'действий %d, требуется не меньше %d' % (n, rule['min']),
                                     'fingerprint': fp, 'excerpt': excerpt})
-    return findings, spreads, excepted, tags
+    return findings, spreads, excepted, commented, tags
 
 
 def key(x):
@@ -596,7 +633,7 @@ def main():
                     help='переписать baseline текущими нарушениями')
     args = ap.parse_args()
 
-    errors, all_f, all_s, all_e, total, declared = [], [], [], [], 0, 0
+    errors, all_f, all_s, all_e, all_c, total, declared = [], [], [], [], [], 0, 0
     specs = sorted(f for f in os.listdir(os.path.join(HERE, 'rules')) if f.endswith('.json'))
     status = None
     for fn in specs:
@@ -608,8 +645,9 @@ def main():
         df, dc = scan_declarations(spec, root, errors)
         if errors:
             break
-        f, sp, ex, t = scan(spec, args.root)
-        all_f += df + f; all_s += sp; all_e += ex; total += t; declared += dc
+        f, sp, ex, cm, t = scan(spec, args.root)
+        all_f += df + f; all_s += sp; all_e += ex; all_c += cm
+        total += t; declared += dc
         print('Контракт: %s (статус %s)' % (spec['contract']['path'], status))
         print('Область:  %s' % (args.root or spec['scan']['root']))
         for r in spec['rules']:
@@ -706,6 +744,13 @@ def main():
         for x in sorted(all_e, key=lambda y: (y['file'], y['line'])):
             print('  %s:%d  раздел %s — %s'
                   % (x['file'], x['line'], x['rule']['exception']['section'], x['why']))
+        print()
+
+    if all_c:
+        print('ЗАКОММЕНТИРОВАНО (%d) — прочитано, но на экран не попадает' % len(all_c))
+        for x in sorted(all_c, key=lambda y: (y['file'], y['line'])):
+            print('  %s:%d  <%s в комментарии — не проверяется, DEC-019'
+                  % (x['file'], x['line'], x['jsx']))
         print()
 
     if all_s:

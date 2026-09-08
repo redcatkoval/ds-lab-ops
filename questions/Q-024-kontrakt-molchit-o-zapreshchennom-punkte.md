@@ -35,7 +35,7 @@
 это объясняет.
 
 Ещё два вхождения не в счёт: они в закомментированном вызове —
-[Q-025](Q-025-zakommentirovannyy-vyzov-schitaetsya-zhivym.md).
+[Q-025](reshennye/Q-025-zakommentirovannyy-vyzov-schitaetsya-zhivym.md).
 
 ## Что именно не сказано
 
