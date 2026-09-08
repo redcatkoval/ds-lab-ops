@@ -102,10 +102,10 @@
 вызовов. Эта зона третья, и она другого рода: не «неизвестно»,
 а неверно посчитано.
 
-[Q-022](Q-022-ne-provereno-schitaet-pary.md) — тоже о числах отчёта,
+[Q-022](../Q-022-ne-provereno-schitaet-pary.md) — тоже о числах отчёта,
 которые читаются не так, как считаются.
 
-[Q-024](Q-024-kontrakt-molchit-o-zapreshchennom-punkte.md) — при
+[Q-024](../Q-024-kontrakt-molchit-o-zapreshchennom-punkte.md) — при
 подсчёте `disabledTooltip` этот мёртвый вызов и нашёлся: два его
 вхождения пришлось вычесть вручную.
 

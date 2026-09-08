@@ -70,7 +70,7 @@
 
 [Q-016](../questions/Q-016-metka-disable-pri-udalenii.md) (метка
 «отключить» при удалении) и
-[Q-018](../questions/Q-018-krestik-dubliruet-udalenie.md) (крестик
+[Q-018](../questions/reshennye/Q-018-krestik-dubliruet-udalenie.md) (крестик
 дублирует пункт меню) остаются написанными резко, потому что там
 обещание пользователю расходится с поведением кода, и смягчать это
 нельзя.

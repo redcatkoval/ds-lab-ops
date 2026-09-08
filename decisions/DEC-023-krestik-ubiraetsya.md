@@ -7,7 +7,7 @@
 названным словом и помеченным красным.
 
 **Решение Павла, 2026-09-08.** Отвечает на
-[Q-018](../questions/Q-018-krestik-dubliruet-udalenie.md).
+[Q-018](../questions/reshennye/Q-018-krestik-dubliruet-udalenie.md).
 
 ## Где именно
 
