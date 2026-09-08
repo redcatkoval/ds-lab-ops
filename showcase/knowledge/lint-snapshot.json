@@ -1,0 +1,354 @@
+{
+  "снят": "2026-09-08",
+  "данные": {
+    "контракт": "contracts/action-menu.md",
+    "статус_контракта": "enforced",
+    "правила": [
+      {
+        "id": "action-menu/min-actions",
+        "раздел": "4.1",
+        "исключение": "single-destructive"
+      },
+      {
+        "id": "action-menu/destructive-last",
+        "раздел": "4.3",
+        "исключение": null
+      },
+      {
+        "id": "action-menu/props-closed",
+        "раздел": "3",
+        "исключение": null
+      }
+    ],
+    "вхождений_живых": 87,
+    "закомментировано": 1,
+    "объявлений_проверено": 1,
+    "нарушений_всего": 7,
+    "новых": 0,
+    "замороженных": 7,
+    "под_исключением": 12,
+    "не_проверено": 25,
+    "baseline_устарел": 0,
+    "новые": [],
+    "замороженные": [
+      {
+        "file": "routes/customers/customer-detail/components/customer-order-section/configurable-customer-order-section.tsx",
+        "line": 28,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      },
+      {
+        "file": "routes/customers/customer-detail/components/customer-order-section/customer-order-section.tsx",
+        "line": 100,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      },
+      {
+        "file": "routes/orders/order-detail/components/order-payment-section/order-payment-section.tsx",
+        "line": 235,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      },
+      {
+        "file": "routes/product-variants/product-variant-detail/components/variant-inventory-section/inventory-actions.tsx",
+        "line": 12,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      },
+      {
+        "file": "routes/products/product-create/components/product-create-details-form/components/product-create-details-media-section/product-create-details-media-section.tsx",
+        "line": 296,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 0, требуется не меньше 2"
+      },
+      {
+        "file": "routes/products/product-detail/components/product-option-section/product-option-section.tsx",
+        "line": 17,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      },
+      {
+        "file": "routes/users/user-list/components/user-list-table/user-list-table-actions.tsx",
+        "line": 17,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "detail": "действий 1, требуется не меньше 2"
+      }
+    ],
+    "исключение": [
+      {
+        "file": "routes/customers/customer-detail/components/customer-address-section/customer-address-section.tsx",
+        "line": 92,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/orders/order-create-claim/components/claim-create-form/claim-outbound-item.tsx",
+        "line": 102,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-outbound-item.tsx",
+        "line": 121,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
+        "line": 350,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/orders/order-detail/components/order-general-section/order-general-section.tsx",
+        "line": 78,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/product-options/product-option-detail/components/product-option-values-section/product-option-value-row-actions.tsx",
+        "line": 46,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/product-options/product-option-value-detail/components/product-option-value-general-section/product-option-value-general-section.tsx",
+        "line": 26,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/regions/region-detail/components/region-country-section/region-country-section.tsx",
+        "line": 189,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/roles/role-detail/components/role-users-section/role-users-section.tsx",
+        "line": 203,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/shipping-profiles/shipping-profile-detail/components/shipping-profile-general-section/shipping-profile-general-section.tsx",
+        "line": 59,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/shipping-profiles/shipping-profiles-list/components/shipping-profile-list-table/shipping-options-row-actions.tsx",
+        "line": 50,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      },
+      {
+        "file": "routes/store/store-detail/components/store-locale-section/store-locale-section.tsx",
+        "line": 201,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "одно действие, и оно разрушающее"
+      }
+    ],
+    "не_проверенные": [
+      {
+        "file": "components/common/file-preview/file-preview.tsx",
+        "line": 54,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "components/common/file-preview/file-preview.tsx",
+        "line": 54,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "components/data-table/data-table.tsx",
+        "line": 433,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "components/data-table/data-table.tsx",
+        "line": 433,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/api-key-management/api-key-management-detail/components/api-key-general-section/api-key-general-section.tsx",
+        "line": 136,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/api-key-management/api-key-management-detail/components/api-key-general-section/api-key-general-section.tsx",
+        "line": 136,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-detail/components/customer-general-section/customer-general-section.tsx",
+        "line": 101,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-detail/components/customer-general-section/customer-general-section.tsx",
+        "line": 101,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-detail/components/customer-group-section/customer-group-section.tsx",
+        "line": 233,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-detail/components/customer-group-section/customer-group-section.tsx",
+        "line": 233,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-list/components/customer-list-table/customer-list-table-actions.tsx",
+        "line": 33,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/customers/customer-list/components/customer-list-table/customer-list-table-actions.tsx",
+        "line": 33,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/locations/location-detail/components/location-general-section/location-general-section.tsx",
+        "line": 538,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/locations/location-detail/components/location-general-section/location-general-section.tsx",
+        "line": 538,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-create-claim/components/claim-create-form/claim-inbound-item.tsx",
+        "line": 111,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-create-edit/components/order-edit-create-form/order-edit-item.tsx",
+        "line": 232,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-create-exchange/components/exchange-create-form/exchange-inbound-item.tsx",
+        "line": 138,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-create-return/components/return-create-form/return-item.tsx",
+        "line": 115,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-detail/components/order-summary-section/order-summary-section.tsx",
+        "line": 212,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/orders/order-detail/components/order-summary-section/order-summary-section.tsx",
+        "line": 212,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/promotions/promotion-detail/components/campaign-section/campaign-section.tsx",
+        "line": 67,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/promotions/promotion-detail/components/campaign-section/campaign-section.tsx",
+        "line": 67,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/roles/role-detail/components/role-general-section/role-general-section.tsx",
+        "line": 124,
+        "rule": "action-menu/min-actions",
+        "section": "4.1",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/roles/role-detail/components/role-general-section/role-general-section.tsx",
+        "line": 124,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      },
+      {
+        "file": "routes/tax-regions/common/components/tax-region-card/tax-region-card.tsx",
+        "line": 186,
+        "rule": "action-menu/destructive-last",
+        "section": "4.3",
+        "why": "список действий собирается в рантайме"
+      }
+    ],
+    "закомментированные": [
+      {
+        "file": "routes/policies/policy-detail/components/policy-general-section/policy-general-section.tsx",
+        "line": 64
+      }
+    ]
+  }
+}

@@ -15,6 +15,7 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "allowJs": true,
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -31,5 +32,5 @@
     "пути, начинающиеся с точки, и при include вида «.storybook» файлы",
     "в проверку не попадают — проверено прогоном."
   ],
-  "include": ["stories", ".storybook/preview.tsx", ".storybook/main.ts"]
+  "include": ["stories", "knowledge", ".storybook/preview.tsx", ".storybook/main.ts"]
 }

@@ -631,6 +631,8 @@ def main():
     ap.add_argument('--baseline', default=os.path.join(HERE, 'baseline.json'))
     ap.add_argument('--freeze', action='store_true',
                     help='переписать baseline текущими нарушениями')
+    ap.add_argument('--json', action='store_true',
+                    help='выдать результат машиночитаемо, без отчёта прозой')
     args = ap.parse_args()
 
     errors, all_f, all_s, all_e, all_c, total, declared = [], [], [], [], [], 0, 0
@@ -648,16 +650,17 @@ def main():
         f, sp, ex, cm, t = scan(spec, args.root)
         all_f += df + f; all_s += sp; all_e += ex; all_c += cm
         total += t; declared += dc
-        print('Контракт: %s (статус %s)' % (spec['contract']['path'], status))
-        print('Область:  %s' % (args.root or spec['scan']['root']))
-        for r in spec['rules']:
-            if 'declaration' in r:
-                print('          %s — один файл, объявление типа %s'
-                      % (r['declaration']['file'], r['declaration']['type']))
-        for i, r in enumerate(spec['rules']):
-            print('%-9s %s — раздел %s, %s' %
-                  ('Правила:' if i == 0 else '', r['id'], r['section'], r['checked_by']))
-        print()
+        if not args.json:
+            print('Контракт: %s (статус %s)' % (spec['contract']['path'], status))
+            print('Область:  %s' % (args.root or spec['scan']['root']))
+            for r in spec['rules']:
+                if 'declaration' in r:
+                    print('          %s — один файл, объявление типа %s'
+                          % (r['declaration']['file'], r['declaration']['type']))
+            for i, r in enumerate(spec['rules']):
+                print('%-9s %s — раздел %s, %s' %
+                      ('Правила:' if i == 0 else '', r['id'], r['section'], r['checked_by']))
+            print()
 
     if errors:
         for e in errors:
@@ -702,6 +705,42 @@ def main():
         have = len(got.get(k, []))
         if have < e['count']:
             stale.append((e, e['count'] - have))
+
+    if args.json:
+        def rows(xs, why=False):
+            out = []
+            for x in sorted(xs, key=lambda y: (y['file'], y['line'])):
+                r = {'file': x['file'], 'line': x['line']}
+                if isinstance(x.get('rule'), dict):
+                    r['rule'] = x['rule']['id']; r['section'] = x['rule']['section']
+                r.update({'detail': x['detail']} if 'detail' in x else {})
+                if why and 'why' in x: r['why'] = x['why']
+                out.append(r)
+            return out
+        json.dump({
+            'контракт': spec['contract']['path'],
+            'статус_контракта': status,
+            'правила': [{'id': r['id'], 'раздел': r['section'],
+                         'исключение': (r.get('exception') or {}).get('id')}
+                        for r in spec['rules']],
+            'вхождений_живых': total,
+            'закомментировано': len(all_c),
+            'объявлений_проверено': declared,
+            'нарушений_всего': len(all_f),
+            'новых': len(fresh),
+            'замороженных': len(frozen),
+            'под_исключением': len(all_e),
+            'не_проверено': len(all_s),
+            'baseline_устарел': len(stale),
+            'новые': rows(fresh),
+            'замороженные': rows(frozen),
+            'исключение': rows(all_e, why=True),
+            'не_проверенные': rows(all_s, why=True),
+            'закомментированные': [{'file': x['file'], 'line': x['line']} for x in
+                                   sorted(all_c, key=lambda y: (y['file'], y['line']))],
+        }, sys.stdout, ensure_ascii=False, indent=2)
+        sys.stdout.write('\n')
+        return 1 if fresh else 0
 
     print('Проверено вхождений <ActionMenu: %d' % total)
     if declared:
