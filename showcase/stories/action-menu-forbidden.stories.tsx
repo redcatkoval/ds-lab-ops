@@ -1,6 +1,5 @@
 import { PencilSquare } from "@medusajs/icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import * as React from "react";
 
 import { ActionMenu } from "../../../medusa-src/packages/admin/dashboard/src/components/common/action-menu";
 

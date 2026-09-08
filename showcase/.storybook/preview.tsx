@@ -2,7 +2,6 @@
 import { TooltipProvider } from "@medusajs/ui"
 import { withThemeByClassName } from "@storybook/addon-themes"
 import type { Decorator, Preview } from "@storybook/react"
-import * as React from "react"
 import { MemoryRouter } from "react-router-dom"
 
 // Стили дашборда: @tailwind base/components/utilities и шрифты.

@@ -1,0 +1,35 @@
+{
+  "//": [
+    "Проверка типов историй витрины. Запуск: ./showcase/typecheck.sh из ds-ops/.",
+    "Настройки повторяют dashboard/tsconfig.json — истории импортируют компонент",
+    "оттуда, и расходиться с его сборкой смысла нет.",
+    "Область — только наше: stories/ и .storybook/. Файлы medusa-src/ попадают",
+    "в проверку как зависимости импортов, но своими ошибками нам не отвечают:",
+    "у дашборда для этого есть собственный typecheck."
+  ],
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false
+  },
+  "//include": [
+    "Каталог .storybook перечислен по файлам: шаблоны TypeScript пропускают",
+    "пути, начинающиеся с точки, и при include вида «.storybook» файлы",
+    "в проверку не попадают — проверено прогоном."
+  ],
+  "include": ["stories", ".storybook/preview.tsx", ".storybook/main.ts"]
+}
