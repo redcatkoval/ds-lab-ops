@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Линтер контрактов дизайн-системы. Одно правило: action-menu/no-trigger-variant.
+"""Линтер контрактов дизайн-системы.
 
 Источник правил — rules/*.json. Каждое правило несёт якорь в контракт:
 путь, раздел и дословную цитату. Перед проверкой цитата ищется в контракте;
 если её нет, линтер останавливается и сообщает о расхождении, а не молчит.
+
+Правила двух видов, и область у них разная:
+
+* правила вызовов — разбирают теги в дереве (scan.root). Такие несут поле
+  jsx: min-actions, destructive-last;
+* правила объявления — читают один файл, объявление типа в компоненте.
+  Такое несёт поле declaration: props-closed.
 """
 import argparse, hashlib, json, os, re, sys
 
@@ -220,6 +227,126 @@ def action_flags(props):
     return flags, ok
 
 
+
+def strip_comments(s):
+    """Убрать // и /* */; строковые литералы не трогать."""
+    out, i = [], 0
+    while i < len(s):
+        c = s[i]
+        if c in '"\'`':
+            j = skip_string(s, i); out.append(s[i:j]); i = j; continue
+        if c == '/' and s[i + 1:i + 2] == '*':
+            j = s.find('*/', i + 2)
+            i = len(s) if j == -1 else j + 2
+            out.append(' '); continue
+        if c == '/' and s[i + 1:i + 2] == '/':
+            j = s.find('\n', i)
+            i = len(s) if j == -1 else j
+            out.append(' '); continue
+        out.append(c); i += 1
+    return ''.join(out)
+
+
+def read_type_decl(src, name):
+    """Правая часть `type <name> = …`. (текст, номер строки) или (None, 0).
+
+    Объявление кончается переводом строки на нулевой глубине скобок.
+    Стрелка `=>` за скобку не считается.
+    """
+    m = re.search(r'^[ \t]*(?:export[ \t]+)?type[ \t]+' + re.escape(name) + r'\s*=',
+                  src, re.M)
+    if not m:
+        return None, 0
+    i, depth, out = m.end(), 0, []
+    while i < len(src):
+        c = src[i]
+        if c in '"\'`':
+            j = skip_string(src, i); out.append(src[i:j]); i = j; continue
+        if c in '{([<':
+            depth += 1
+        elif c in '})]':
+            depth -= 1
+        elif c == '>' and src[i - 1:i] != '=':
+            depth -= 1
+        elif c == '\n' and depth <= 0:
+            break
+        out.append(c); i += 1
+    return ''.join(out).strip(), src[:m.start()].count('\n') + 1
+
+
+FIELD_START = re.compile(r'(?:readonly\s+)?[A-Za-z_$][\w$]*\s*\??\s*:')
+
+
+def split_fields(body):
+    """Поля объектного типа. Разделитель — запятая, точка с запятой или
+    перенос строки на нулевой глубине скобок.
+
+    Строка, которая не начинается как поле, прирастает к предыдущей:
+    так не рвётся объявление, растянутое на несколько строк
+    (`foo:` и `| "a"` на следующей строке — одно поле, а не два).
+    """
+    parts, depth, buf, i = [], 0, [], 0
+    while i < len(body):
+        c = body[i]
+        if c in '"\'`':
+            j = skip_string(body, i); buf.append(body[i:j]); i = j; continue
+        if c in '{([':
+            depth += 1
+        elif c in '})]':
+            depth -= 1
+        elif c == '<':
+            depth += 1
+        elif c == '>' and body[i - 1:i] != '=':
+            depth -= 1
+        if depth == 0 and c in ',;\n':
+            parts.append(''.join(buf)); buf = []; i += 1; continue
+        buf.append(c); i += 1
+    parts.append(''.join(buf))
+    out = []
+    for part in parts:
+        t = part.strip()
+        if not t:
+            continue
+        if out and not FIELD_START.match(t):
+            out[-1] = out[-1] + ' ' + t
+        else:
+            out.append(t)
+    return out
+
+
+def props_fields(rhs, wrapper):
+    """Поля объявления. (список имён, замечание о форме).
+
+    Форма обязана быть `wrapper<{…}>` — один объектный литерал и ничего
+    больше. Пересечение или объединение внутрь не разбирается: замечание
+    о форме и есть нарушение.
+    """
+    body = strip_comments(rhs).strip()
+    short = lambda t: re.sub(r'\s+', ' ', t).strip()
+    if wrapper:
+        if not (body.startswith(wrapper) and body.endswith('>')):
+            return [], 'правая часть — не `%s<…>`, а `%s`' % (wrapper, short(body))
+        inner = body[len(wrapper):-1].strip()
+        if not inner.startswith('<'):
+            return [], 'правая часть — не `%s<…>`, а `%s`' % (wrapper, short(body))
+        body = inner[1:].strip()
+    if not body.startswith('{'):
+        return [], 'внутри `%s` не объектный литерал, а `%s`' % (wrapper or 'типа', short(body))
+    j = match_bracket(body, 0)
+    if j == -1:
+        return [], 'объектный литерал не закрыт'
+    if body[j + 1:].strip():
+        return [], ('после объектного литерала стоит ещё `%s` — '
+                    'поля могут приходить оттуда' % short(body[j + 1:]))
+    names = []
+    for field in split_fields(body[1:j]):
+        m = re.match(r'(?:readonly\s+)?([A-Za-z_$][\w$]*)\s*\??\s*:', field)
+        if not m:
+            return names, 'поле не разобрано: `%s`' % short(field)[:60]
+        names.append(m.group(1))
+    return names, None
+
+
 def find_tags(src, name):
     """Вхождения <name ...>: (текст атрибутов, номер строки открывающего <)."""
     out = []
@@ -308,8 +435,62 @@ def check_contract(spec, errors):
     return status
 
 
+def resolve_root(spec, root_override=None):
+    return os.path.abspath(root_override or os.path.join(DS_OPS, spec['scan']['root']))
+
+
+def scan_declarations(spec, root, errors):
+    """Правила объявления: один файл на правило, дерево не обходится.
+
+    Не найденный файл или не найденное объявление — остановка с кодом 2,
+    а не «чисто»: проверить было нечего, и молчать об этом нельзя.
+    """
+    findings, checked = [], 0
+    for rule in spec['rules']:
+        if 'declaration' not in rule:
+            continue
+        decl = rule['declaration']
+        path = os.path.join(root, decl['file'])
+        if not os.path.exists(path):
+            errors.append('правило %s: файл объявления не найден — %s'
+                          % (rule['id'], decl['file']))
+            continue
+        src = open(path, encoding='utf-8', errors='replace').read()
+        rhs, line = read_type_decl(src, decl['type'])
+        if rhs is None:
+            errors.append('правило %s: объявление `type %s` не найдено в %s — '
+                          'проверять нечего, и это не «чисто»'
+                          % (rule['id'], decl['type'], decl['file']))
+            continue
+        checked += 1
+        names, shape = props_fields(rhs, decl.get('wrapper'))
+        allowed = list(decl['allowed'])
+        detail = None
+        if shape:
+            detail = 'форма объявления не та, что в разделе 3: ' + shape
+        else:
+            extra = [n for n in names if n not in allowed]
+            missing = [n for n in allowed if n not in names]
+            parts = []
+            if extra:
+                parts.append('появились поля, которых нет в контракте: '
+                             + ', '.join('`%s`' % n for n in extra))
+            if missing:
+                parts.append('нет полей, объявленных в контракте: '
+                             + ', '.join('`%s`' % n for n in missing))
+            if parts:
+                detail = '; '.join(parts)
+        if detail:
+            norm = re.sub(r'\s+', ' ', rhs).strip()
+            fp = hashlib.sha256((decl['type'] + ' = ' + norm).encode('utf-8')).hexdigest()[:16]
+            findings.append({'file': decl['file'], 'line': line, 'rule': rule,
+                             'detail': detail, 'fingerprint': fp,
+                             'excerpt': (decl['type'] + ' = ' + norm)[:120]})
+    return findings, checked
+
+
 def scan(spec, root_override=None):
-    root = os.path.abspath(root_override or os.path.join(DS_OPS, spec['scan']['root']))
+    root = resolve_root(spec, root_override)
     exts = tuple(spec['scan']['extensions'])
     findings, spreads, files, tags = [], [], 0, 0
     for dp, dn, fns in os.walk(root):
@@ -320,7 +501,8 @@ def scan(spec, root_override=None):
             rel = os.path.relpath(p, root)
             if any(rel.startswith(x) for x in spec['scan']['exclude_paths']): continue
             src = open(p, encoding='utf-8', errors='replace').read()
-            jsx_names = sorted({r['jsx'] for r in spec['rules']})
+            tag_rules = [r for r in spec['rules'] if 'jsx' in r]
+            jsx_names = sorted({r['jsx'] for r in tag_rules})
             seen_file = False
             for jsx in jsx_names:
                 if '<' + jsx not in src: continue
@@ -329,7 +511,7 @@ def scan(spec, root_override=None):
                     if not seen_file: files += 1; seen_file = True
                     props, spread = read_props(tag)
                     tag_line = src[:at].count('\n') + 1
-                    for rule in spec['rules']:
+                    for rule in tag_rules:
                         if rule['jsx'] != jsx: continue
                         if rule['check'] == 'prop-forbidden':
                             if rule['prop'] in props:
@@ -391,7 +573,7 @@ def main():
                     help='переписать baseline текущими нарушениями')
     args = ap.parse_args()
 
-    errors, all_f, all_s, total = [], [], [], 0
+    errors, all_f, all_s, total, declared = [], [], [], 0, 0
     specs = sorted(f for f in os.listdir(os.path.join(HERE, 'rules')) if f.endswith('.json'))
     status = None
     for fn in specs:
@@ -399,10 +581,18 @@ def main():
         status = check_contract(spec, errors)
         if errors:
             break
+        root = resolve_root(spec, args.root)
+        df, dc = scan_declarations(spec, root, errors)
+        if errors:
+            break
         f, sp, t = scan(spec, args.root)
-        all_f += f; all_s += sp; total += t
+        all_f += df + f; all_s += sp; total += t; declared += dc
         print('Контракт: %s (статус %s)' % (spec['contract']['path'], status))
         print('Область:  %s' % (args.root or spec['scan']['root']))
+        for r in spec['rules']:
+            if 'declaration' in r:
+                print('          %s — один файл, объявление типа %s'
+                      % (r['declaration']['file'], r['declaration']['type']))
         for i, r in enumerate(spec['rules']):
             print('%-9s %s — раздел %s, %s' %
                   ('Правила:' if i == 0 else '', r['id'], r['section'], r['checked_by']))
@@ -453,6 +643,8 @@ def main():
             stale.append((e, e['count'] - have))
 
     print('Проверено вхождений <ActionMenu: %d' % total)
+    if declared:
+        print('Проверено объявлений типа: %d' % declared)
     print('Нарушений всего: %d — новых %d, замороженных %d'
           % (len(all_f), len(fresh), len(frozen)))
     print()
