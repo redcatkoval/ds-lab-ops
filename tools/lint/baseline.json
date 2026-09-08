@@ -40,17 +40,6 @@
     },
     {
       "rule": "action-menu/min-actions",
-      "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "f35fae0aa3111529",
-      "count": 1,
-      "line_hint": 173,
-      "excerpt": "<ActionMenu actions={[ { label: t(\"orders.fulfillment.fulfillItems\"), icon: <Buildings />, to: `/orders/${order.id}/fulf",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
       "file": "routes/orders/order-detail/components/order-payment-section/order-payment-section.tsx",
       "section": "4.1",
       "detail": "действий 1, требуется не меньше 2",
@@ -69,17 +58,6 @@
       "count": 1,
       "line_hint": 12,
       "excerpt": "<ActionMenu actions={[ { icon: <Buildings />, label: t(\"products.variant.inventory.navigateToItem\"), to: `/inventory/${i",
-      "frozen": "2026-09-01"
-    },
-    {
-      "rule": "action-menu/min-actions",
-      "file": "routes/product-variants/product-variant-detail/components/variant-inventory-section/variant-inventory-section.tsx",
-      "section": "4.1",
-      "detail": "действий 1, требуется не меньше 2",
-      "fingerprint": "307ec3bbcecbac0a",
-      "count": 1,
-      "line_hint": 48,
-      "excerpt": "<ActionMenu actions={[ { label: t( hasKit ? \"products.variant.inventory.manageKit\" : \"products.variant.inventory.manageI",
       "frozen": "2026-09-01"
     },
     {
@@ -239,6 +217,36 @@
         "line_hint": 201,
         "было": "действий 1, требуется не меньше 2",
         "основание": "DEC-017",
+        "вычеркнуто": "2026-09-08"
+      }
+    ]
+  },
+  "исправлено": {
+    "что_это": "записи, снятые потому, что нарушение исправлено: вызова в коде больше нет. Не путать с ключом «вычеркнуто» — там вызов на месте и признан законным решением",
+    "чем_подтверждается": "прогон линтера после правки: блок «BASELINE УСТАРЕЛ» на эти отпечатки исчезает, потому что вызовов не осталось",
+    "записи": [
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/orders/order-detail/components/order-fulfillment-section/order-fulfillment-section.tsx",
+        "fingerprint": "f35fae0aa3111529",
+        "count": 1,
+        "line_hint": 173,
+        "было": "действий 1, требуется не меньше 2",
+        "чем_исправлено": "меню на одно действие заменено кнопкой по DEC-015",
+        "образец": "product-media-section.tsx:89, коммит ae40f47a",
+        "правка": "medusa-src, ветка ds-lab/action-menu; на момент записи не закоммичена",
+        "вычеркнуто": "2026-09-08"
+      },
+      {
+        "rule": "action-menu/min-actions",
+        "file": "routes/product-variants/product-variant-detail/components/variant-inventory-section/variant-inventory-section.tsx",
+        "fingerprint": "307ec3bbcecbac0a",
+        "count": 1,
+        "line_hint": 48,
+        "было": "действий 1, требуется не меньше 2",
+        "чем_исправлено": "меню на одно действие заменено кнопкой по DEC-015",
+        "образец": "product-media-section.tsx:89, коммит ae40f47a",
+        "правка": "medusa-src, ветка ds-lab/action-menu; на момент записи не закоммичена",
         "вычеркнуто": "2026-09-08"
       }
     ]
