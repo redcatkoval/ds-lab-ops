@@ -1,5 +1,7 @@
 # DEC-005. Карта строится по двум слоям
 
+**Состояние:** действует
+
 **Решили.** Считаем оба слоя: системный пакет `@medusajs/ui` и локальный
 `dashboard/src/components/`. Результаты — `ds-ops/map/components.json`
 и `ds-ops/map/local-components.json`.
